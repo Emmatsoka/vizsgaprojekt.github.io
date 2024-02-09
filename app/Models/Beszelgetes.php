@@ -22,12 +22,12 @@ class Beszelgetes extends Model
     {
         return $this->hasMany(Uzenet::class);
 
-        # code...
+     
     }
 
     public function user( )
     {
         return $this->belongsTo(User::class, 'sender_id');
-        # code...
+       
     }
 }
