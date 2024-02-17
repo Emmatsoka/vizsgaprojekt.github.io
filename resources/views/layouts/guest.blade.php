@@ -7,10 +7,7 @@
         <link rel="shortcut icon" href="Wesoc_favicon.png" type="image/x-icon">
         <title>{{ config('app.name', 'Laravel') }}</title>
         <link rel="stylesheet" href="./styles/style.css">
-        <!-- Fonts -->
-    
-        <!-- Scripts -->
-
+ 
     </head>
     <body class="">
         <div class="">
