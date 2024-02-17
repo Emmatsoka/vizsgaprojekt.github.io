@@ -1,0 +1,97 @@
+
+
+@font-face {
+    font-family: krona;
+    src: url(../fonts/KronaOne-Regular.ttf);
+  }
+.kerek{
+    border-radius: 35px !important;
+}
+.gomb{
+    border-radius: 30px !important;
+    padding: 8px 30px 8px !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.feherhtr{
+    background: linear-gradient(180deg, white 0%, #DCDCDC 100%) !important;
+    color:  black !important;
+    transition: 0.4s all !important;
+}
+
+.feherhtr:hover{
+    background: linear-gradient(180deg, #343434 0%, #202020 100%) !important;
+    color: white !important;
+    transition: 0.4s all !important;
+}
+.feketehtr{
+    background: linear-gradient(180deg, #343434 0%, #202020 100%) !important;
+    color: white !important;
+    transition: 0.4s all !important;
+}
+
+.feketehtr:hover{
+    background: linear-gradient(180deg, white 0%, #DCDCDC 100%) !important;
+    color:  black !important;
+    transition: 0.4s all !important;
+}
+nav{
+    padding: 40px 70px 30px !important;
+    z-index: 1 !important;
+    
+    width: 100% !important;
+}
+.navbar{
+    background: transparent !important;
+    position: sticky !important;;
+}
+.nav-link{
+    padding: 0px 25px !important; 
+    color: white !important;
+    font-size: 18px !important;
+}
+.nav-link:hover{
+    color: rgb(221, 221, 221) !important;
+}
+.navbar-brand{
+    font-weight: 700 !important;
+    font-size: 25px !important;
+}
+header{
+    height: 100vh;
+    background-size: 100vw 110vh;
+    background-repeat: no-repeat;
+    background-image: url('../pics/headerpics.png');   
+
+}
+#headerszoveg{
+    margin-top: 20vh !important;
+    color: white !important;
+    text-align: center;
+}
+#headerszoveg h1{
+    font-size: 6rem;
+    font-family: krona;
+}
+#headerszoveg p{
+    font-size: 1.5rem;
+    max-width: 650px !important;
+    margin: 0 auto;
+    margin-top: 20px !important;
+    font-family: krona;
+}
+#headergombok button{
+    margin: 20px 10px 0px;
+}
+.bold{
+    font-weight: 500 !important;
+}
+
+#tartalom{
+    height: 100vh !important;
+}
+
+body{
+    background-color: rgb(247, 246, 246);
+}
