@@ -49,8 +49,20 @@ nav{
 .nav-link{
     padding: 0px 25px !important; 
     color: white !important;
-    font-size: 18px !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
 }
+@media only screen and (min-width: 992px) {
+.float-right{
+    position: absolute;
+    top: 45px!important;
+    right: 60px !important;
+}
+.navbar-nav{
+    margin-left: -60px !important  ;
+}
+}
+
 .nav-link:hover{
     color: rgb(221, 221, 221) !important;
 }
@@ -95,3 +107,4 @@ header{
 body{
     background-color: rgb(247, 246, 246);
 }
+

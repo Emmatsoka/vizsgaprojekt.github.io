@@ -19,8 +19,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center bold" id="navbarNav">
-          <ul class="navbar-nav ">
-            <li class="nav-item active">
+          <ul class="navbar-nav">
+            <li class="nav-item">
               <a class="nav-link" href="#">Támogatás</a>
             </li>
             <li class="nav-item">
@@ -35,9 +35,9 @@
            
           </ul>
           
+          <a class=" gomb feherhtr float-right bold" href="#">Belépek</a>
         </div>
 
-            <a class=" gomb feherhtr float-right bold" href="#">Belépek</a>
       
       </nav>
 
@@ -53,7 +53,7 @@
      <div id="tartalom">
 
      </div>
-    <script src="./styles/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
