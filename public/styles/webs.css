@@ -9,11 +9,13 @@
 }
 .gomb{
     border-radius: 30px !important;
-    padding: 8px 30px 8px !important;
+    padding: 8px 40px 8px !important;
     text-decoration: none !important;
     border: none !important;
 }
-
+.gomb a{
+    text-decoration: none !important;
+}
 .feherhtr{
     background: linear-gradient(180deg, white 0%, #DCDCDC 100%) !important;
     color:  black !important;
@@ -75,7 +77,7 @@ header{
     background-size: 100vw 110vh;
     background-repeat: no-repeat;
     background-image: url('../pics/headerpics.png');   
-
+   
 }
 #headerszoveg{
     margin-top: 20vh !important;
@@ -92,9 +94,14 @@ header{
     margin: 0 auto;
     margin-top: 20px !important;
     font-family: krona;
+    color: #e6daff;
 }
-#headergombok button{
-    margin: 20px 10px 0px;
+#headergombok a{
+    margin: 20px 12px 0px !important;
+
+}
+#headergombok{
+    margin-top: 30px ;
 }
 .bold{
     font-weight: 500 !important;
@@ -107,4 +114,36 @@ header{
 body{
     background-color: rgb(247, 246, 246);
 }
+.aktiv{
+    color: #bb93fd !important;
+}
+#bemutato{
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+    
+   
+}
+#bemutato h1{
+    text-align: center !important;
+    font-family: krona;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin: 0 auto !important;
 
+}
+.col{
+    max-width: 400px;
+    text-align: center;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+footer{
+    background-color: #6322fa;
+    background-image: url('../pics/htr.png');   
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    height: 20vh !important;
+}

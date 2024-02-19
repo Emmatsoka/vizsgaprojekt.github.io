@@ -1,14 +1,15 @@
+<title>Wesoc | Elfeledett jelszó</title>
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-    </div>
+    <div class="htr">
+
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('password.email') }}">
+    <form method="POST" action="{{ route('password.email') }}" id="elfelejtettjelszoform">
         @csrf
-
+        <h1>Elfelejtett jelszó</h1>
+      
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
@@ -18,8 +19,9 @@
 
         <div class="flex items-center justify-end mt-4">
             <x-primary-button>
-                {{ __('Email Password Reset Link') }}
+                {{ __('Email jelszó reset link  ') }}
             </x-primary-button>
         </div>
     </form>
+    </div>
 </x-guest-layout>

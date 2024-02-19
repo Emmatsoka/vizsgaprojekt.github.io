@@ -17,7 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('oldalak.fooldal');
 });
-
+Route::get('/fooldal', function () {
+    return view('oldalak.fooldal');
+});
+Route::get('/elerhetoseg', function () {
+    return view('oldalak.elerhetoseg');
+});
+Route::get('/adatvedelem', function () {
+    return view('oldalak.adatvedelem');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

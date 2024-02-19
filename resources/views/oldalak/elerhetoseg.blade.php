@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesoc | Főoldal</title>
+    <title>Wesoc | Elérhetőség</title>
     <link rel="shortcut icon" href="Wesoc_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/webs.css">
@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse justify-content-center bold" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
+              <a class="nav-link" href="#">Támogatás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('blog') }}">Blog</a>
+              <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('adatvedelem') }}">Adatvédelem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
+                <a class="nav-link aktiv" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
               </li>
            
           </ul>
@@ -45,25 +45,14 @@
 
  
         <div id="headerszoveg">
-<h1>Egy <span class="lilahatter">oldal..</span></h1>
-<p>Ami egy fantasztikus közösségi felületet nyújt minden ember számára.</p>
-<div id="headergombok">
-<a href="{{ url('register') }}" class="gomb feketehtr bold">Regisztráció</a><a class="gomb feherhtr bold" href="">Információk</a>
-</div>
+<h1>Elérhetőség</h1>
+
+
         </div>
       </header>
      <div id="tartalom">
-          <section id="bemutato">
-            <h1>Teszt</h1>
-            <div class="row">
-              <div class="col">asd</div>
-              <div class="col">asd</div>
-            </div>
-          </section>
+
      </div>
-     <footer>
-      
-     </footer>
     <script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
