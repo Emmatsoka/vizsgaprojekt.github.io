@@ -71,6 +71,12 @@ nav{
 .navbar-brand{
     font-weight: 700 !important;
     font-size: 25px !important;
+    margin-right: 0px !important;
+    transition: 0.3s all;
+}
+.navbar-brand:hover{
+    opacity: 70% !important;
+    transition: 0.3s all;
 }
 header{
     height: 100vh;
@@ -106,11 +112,12 @@ header{
     
 }
 .bold{
+ 
     font-weight: 500 !important;
 }
 
 #tartalom{
-    height: 100vh !important;
+    height: fit-content;
 }
 
 body{
@@ -121,13 +128,43 @@ body{
 }
 #bemutato{
     margin: 0 auto !important;
-    margin-top: 100px !important;
+    margin-top: 220px !important;
     
    
 }
 #bemutato h1{
     text-align: center !important;
     font-family: krona;
+}
+#bemutato #szoveg{
+    max-width: 500px !important;
+}
+#bemutato .col-4{
+    padding: 40px !important;
+}
+#bemutato .row{
+    margin-top: 40px !important;
+    
+}
+#bemutato2{
+    margin: 0 auto !important;
+    margin-top: 220px !important;
+    background-color: #efe9fd;
+    padding: 40px !important;
+   
+}
+#bemutato2 h1{
+    text-align: center !important;
+    font-family: krona;
+}
+#bemutato2 #szoveg{
+    max-width: 500px !important;
+}
+#bemutato2 .col-4{
+    padding: 40px !important;
+}
+#bemutato2 .row{
+    margin-top: 40px !important;
 }
 .row{
     margin-right: 0px !important;
@@ -141,7 +178,18 @@ footer{
     background-image: url('../pics/htr.png');   
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh !important;
+    height: 90vh !important;
+    margin-top: 200px;
+}
+footer .col-5{
+    padding: 40px !important;
+    background-color: white !important;
+    border-radius: 30px !important;
+    max-width: 400px;
+    margin: 0px 50px 0px;
+}
+footer h1{
+    text-align: center;
 }
 .wave{
     z-index: 2;
@@ -176,7 +224,7 @@ footer{
 }
 
 .path-0{
-    animation:pathAnim-0 10s;
+    animation:pathAnim-0 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -197,3 +245,4 @@ footer{
       d: path("M 0,400 L 0,150 C 104.38974358974357,161.32564102564103 208.77948717948715,172.65128205128207 284,183 C 359.22051282051285,193.34871794871793 405.2717948717949,202.72051282051282 476,192 C 546.7282051282051,181.27948717948718 642.1333333333334,150.46666666666664 740,122 C 837.8666666666666,93.53333333333335 938.1948717948719,67.41282051282052 1002,93 C 1065.805128205128,118.58717948717948 1093.0871794871796,195.8820512820513 1160,214 C 1226.9128205128204,232.1179487179487 1333.4564102564102,191.05897435897435 1440,150 L 1440,400 L 0,400 Z");
     }
   }
+

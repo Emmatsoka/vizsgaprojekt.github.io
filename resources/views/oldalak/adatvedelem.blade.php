@@ -16,7 +16,7 @@
 <body>
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="{{ url('fooldal') }}">WESOC</a>
+      <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

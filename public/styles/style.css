@@ -11,10 +11,17 @@ form{
 }
 #regisztraciosform{
 
-    margin-top: 20vh !important;
+    margin-top: 25vh !important;
 }
 #bejelentkezesform, #elfelejtettjelszoform{
-    margin-top: 30vh !important;
+    margin-top: 25vh !important;
+}
+#logo{
+
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 form h1{
     text-align: center;
@@ -40,6 +47,7 @@ form h1{
     padding: 8px;
     width: 100%;
 }
+
 form input:focus{
     border: 1px rgb(160, 160, 160) solid !important;
     background-color: rgb(238, 238, 238);
@@ -64,7 +72,7 @@ form button{
     border: none !important;
     background: linear-gradient(to bottom, #5f00b0, #320079);
     color: white !important;
-    padding: 8px !important;
+    padding: 10px !important;
     border-radius: 30px !important;
     margin-top: 10px !important;
     transition: 0.3s all;
