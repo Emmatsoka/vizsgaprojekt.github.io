@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Beszelgetes extends Model
+class Conversation extends Model
 {
     use HasFactory;
-
 
     protected $fillable=[
         'sender_id',
@@ -18,16 +17,16 @@ class Beszelgetes extends Model
 
     //relationships
 
-    public function message( )
+    public function messages( )
     {
-        return $this->hasMany(Uzenet::class);
+return $this->hasMany(Message::class);
 
-     
+        # code...
     }
 
     public function user( )
     {
-        return $this->belongsTo(User::class, 'sender_id');
-       
+   return $this->belongsTo(User::class);
+        # code...
     }
 }

@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Uzenet extends Model
+class Message extends Model
 {
-   
+
     use HasFactory;
 
     protected $fillable=[
@@ -20,11 +20,9 @@ class Uzenet extends Model
     ];
 
 
-
-    
-    public function beszelget()
+    public function conversation()
     {
-        return $this->belongsTo(Beszelgetes::class);
+        return $this->belongsTo(Conversation::class);
         # code...
     }
 
