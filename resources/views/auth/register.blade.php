@@ -47,9 +47,9 @@
                 {{ __('Már regisztráltál?') }}
             </a>
 
-            <x-primary-button>
+            <button>
                 {{ __('Regisztrálok') }}
-            </x-primary-button>
+            </button>
         </div>
     </form>
     </div>

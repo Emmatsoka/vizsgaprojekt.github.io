@@ -17,11 +17,11 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
+ 
+            <button>
                 {{ __('Email jelszó reset link  ') }}
-            </x-primary-button>
-        </div>
+            </button>
+        
     </form>
     </div>
 </x-guest-layout>

@@ -142,6 +142,9 @@ body{
 .aktiv{
     color: #bb93fd !important;
 }
+#bemutato img{
+    border-radius: 30px !important;
+}
 #bemutato{
     margin: 0 auto !important;
     margin-top: 220px !important;
@@ -162,6 +165,9 @@ body{
 #bemutato .row{
     margin-top: 40px !important;
     
+}
+#bemutato2 img{
+    border-radius: 30px !important;
 }
 #bemutato2{
     margin: 0 auto !important;

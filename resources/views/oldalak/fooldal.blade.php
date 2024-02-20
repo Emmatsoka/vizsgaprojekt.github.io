@@ -84,11 +84,11 @@
               <div class="row justify-content-center">
              
                 <div class="col-lg-4 text-center">
-                  <img src="pics/sample.png" height="auto"  class="img-fluid">
+                  <img src="pics/sample2.jpg" height="auto"  class="img-fluid">
                 </div>
                 <div class="col-lg-4">
                   <p>
-                  Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. Duis ultricies lacus sed turpis tincidunt id aliquet. Lacus suspendisse faucibus <b>interdum</b> posuere lorem ipsum dolor sit amet. Posuere urna nec tincidunt praesent semper. Id cursus metus aliquam eleifend mi in. Sem fringilla ut morbi tincidunt augue interdum. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Ac feugiat sed <b>lectus</b> vestibulum mattis ullamcorper velit sed ullamcorper. Facilisis magna etiam tempor orci eu lobortis elementum nibh. <b>Enim</b> tortor at auctor urna.
+                  Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. Duis ultricies lacus sed turpis tincidunt id aliquet. Lacus suspendisse faucibus <b>interdum</b> posuere lorem ipsum dolor sit amet. Posuere urna nec tincidunt praesent semper. Id cursus metus aliquam eleifend mi in. Sem fringilla ut morbi tincidunt augue interdum. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Ac feugiat sed <b>lectus</b> vestibulum mattis ullamcorper velit sed ullamcorper. Facilisis magna etiam tempor orci eu lobortis elementum nibh. <b>Enim</b> tortor at auctor urna. Id cursus metus aliquam <b>eleifend</b> mi in. Sem fringilla ut morbi tincidunt augue interdum. Lacus suspendisse faucibus <b>interdum</b> posuere lorem ipsum dolor sit amet.
                   </p>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                   </p>
                 </div>
                 <div class="col-lg-4 text-center">
-                  <img src="pics/sample.png" height="auto"  class="img-fluid">
+                  <img src="pics/sample3.jpg" height="auto"  class="img-fluid">
                 </div>
             </div>
           </section>
