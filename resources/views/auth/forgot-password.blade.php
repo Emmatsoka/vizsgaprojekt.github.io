@@ -5,7 +5,7 @@
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-    <img src="Wesoc_logo_white_png.png" height="auto" width="140px" id="logo">
+    <a href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="140px" id="logo"></a>
     <form method="POST" action="{{ route('password.email') }}" id="elfelejtettjelszoform">
         @csrf
         <h1>Elfelejtett jelszó</h1>

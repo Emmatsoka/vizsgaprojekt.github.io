@@ -129,7 +129,8 @@ body{
 #bemutato{
     margin: 0 auto !important;
     margin-top: 220px !important;
-    
+    margin-bottom: 150px !important;
+    padding: 20px !important; 
    
 }
 #bemutato h1{
@@ -139,7 +140,7 @@ body{
 #bemutato #szoveg{
     max-width: 500px !important;
 }
-#bemutato .col-4{
+#bemutato .col-lg-4{
     padding: 40px !important;
 }
 #bemutato .row{
@@ -148,19 +149,21 @@ body{
 }
 #bemutato2{
     margin: 0 auto !important;
-    margin-top: 220px !important;
+   
     background-color: #efe9fd;
-    padding: 40px !important;
+    padding: 20px !important;
    
 }
+#bemutato2 .row{ }
 #bemutato2 h1{
     text-align: center !important;
     font-family: krona;
+    z-index: 666 !important;
 }
 #bemutato2 #szoveg{
     max-width: 500px !important;
 }
-#bemutato2 .col-4{
+#bemutato2 .col-lg-4{
     padding: 40px !important;
 }
 #bemutato2 .row{
@@ -178,18 +181,34 @@ footer{
     background-image: url('../pics/htr.png');   
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh !important;
+    height: fit-content !important;
     margin-top: 200px;
+    padding: 0px 0px 50px;
 }
 footer .col-5{
     padding: 40px !important;
     background-color: white !important;
     border-radius: 30px !important;
     max-width: 400px;
-    margin: 0px 50px 0px;
+    margin: 0px 50px 20px;
+}
+footer .col-4{
+    padding: 40px !important;
+    background-color: white !important;
+    border-radius: 30px !important;
+    max-width: 1000px;
+    margin: 0px 50px  20px;
 }
 footer h1{
     text-align: center;
+    padding: 8px ;
+    margin: 0px 0px 10px;
+    background: linear-gradient(to bottom, #5f00b0, #320079);
+    border-radius: 30px !important;
+    color: white !important;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: krona;
 }
 .wave{
     z-index: 2;
@@ -222,7 +241,22 @@ footer h1{
 
    
 }
+.sectlewave{
+    z-index: 599;
+    position: relative !important;
+    top: 0px !important;
+    left:0px !important;
 
+   
+}
+.sectfelwave{
+   
+    position: relative !important;
+    bottom: 0px !important;
+    left:0px !important;
+
+   
+}
 .path-0{
     animation:pathAnim-0 8s;
     animation-timing-function: linear;
