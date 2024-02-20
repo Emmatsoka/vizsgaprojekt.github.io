@@ -18,6 +18,12 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
+    public function render($request, Throwable $e){
+        if($this->isHttpException($e) == 404) {
+            return response()->view('hiba.404',[],404);    
+    }
+return parent::render($request, $e);
+}
     /**
      * Register the exception handling callbacks for the application.
      */

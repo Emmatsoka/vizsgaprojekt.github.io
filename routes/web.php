@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('oldalak.fooldal');
 });
+
 Route::get('/fooldal', function () {
     return view('oldalak.fooldal');
 });
