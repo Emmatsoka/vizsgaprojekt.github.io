@@ -15,37 +15,37 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center bold" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('blog') }}">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('adatvedelem') }}">Adatvédelem</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        
+          <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center bold" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
               </li>
-           
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('Projekt') }}">Projekt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('adatvedelem') }}">Adatvédelem</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
+                </li>
+                <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
+            </ul>
+       
           
-          <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
         </div>
-
-      
       </nav>
+  
 
  
         <div id="headerszoveg">
-<h1>Egy <span class="lilahatter">oldal..</span></h1>
+<h1>Egy <span class="masbetu">oldal..</span></h1>
 <p>Ami egy fantasztikus közösségi felületet nyújt minden ember számára.</p>
 <div id="headergombok">
 <a href="{{ url('register') }}" class="gomb feketehtr bold">Regisztráció</a><a class="gomb feherhtr bold" href="">Információk</a>
@@ -140,9 +140,9 @@
         </div>
      </footer>
 
-     <script src="./styles/bootstrap/js/bootstrap.js"></script>
+  
      <script src="./styles/bootstrap/js/bootstrap.min.js"></script>
-     <script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
      
 </body>
 

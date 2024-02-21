@@ -4,6 +4,11 @@
     font-family: krona;
     src: url(../fonts/KronaOne-Regular.ttf);
   }
+  
+@font-face {
+    font-family: syne;
+    src: url(../fonts/Syne-Regular.ttf);
+  }
 .kerek{
     border-radius: 35px !important;
 }
@@ -62,8 +67,9 @@ nav{
     right: 60px !important;
 }
 .navbar-nav{
-    margin-left: -60px !important  ;
+    margin-left: -100px !important  ;
 }
+
 }
 @media only screen and (max-width: 992px) {
     nav{
@@ -79,13 +85,29 @@ nav{
     
      
     }
+    .navbar-nav{
+        text-align: center !important;
+        margin-top: 15px !important;
+    }
+    .nav-item{
+        padding: 5px !important;
+    }
+    nav .gomb{
+        margin: 0 auto !important;
+        position: relative !important;
+        margin-top: 10px !important;
+      
+    }
 }
 .nav-link:hover{
     color: rgb(221, 221, 221) !important;
 }
+.navbar-toggler-icon{
+    z-index: 10 !important;
+}
 .navbar-brand{
     font-weight: 700 !important;
-    font-size: 25px !important;
+    font-size: 23px !important;
     margin-right: 0px !important;
     transition: 0.3s all;
 }
@@ -101,7 +123,7 @@ header{
    
 }
 #headerszoveg{
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
     color: white !important;
     text-align: center;
     z-index: 600!important;
@@ -109,6 +131,10 @@ header{
 #headerszoveg h1{
     font-size: clamp(50px, 5vw, 10vw);
     font-family: krona;
+}
+.masbetu{
+    font-family: syne;
+    font-size: clamp(50px, 6vw, 10vw);
 }
 #headerszoveg p{
     font-size:  clamp(19px, 1.25vw, 10vw);
@@ -286,6 +312,7 @@ footer h1{
 
    
 }
+
 @media only screen and (max-width: 1081px) {
     .wave{
         bottom: 50px;
