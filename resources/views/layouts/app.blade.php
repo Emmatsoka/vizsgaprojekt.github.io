@@ -9,6 +9,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
         <link rel="stylesheet" href="./styles/style.css">
 
+        @livewireStyles
 
     </head>
     <body class="font-sans antialiased">
