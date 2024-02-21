@@ -4,7 +4,7 @@
         <div class="htr">
     <!-- Session Status -->
     <x-auth-session-status  :status="session('status')" />
-
+    <a href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="140px" id="logo"> </a>
     <form method="POST" action="{{ route('login') }}" id="bejelentkezesform">
         @csrf
         <h1>Bejelentkezés</h1>

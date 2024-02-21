@@ -1,6 +1,7 @@
 <title>Wesoc | Regisztráció</title>
 <x-guest-layout>
     <div class="htr">
+        <a href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="140px" id="logo"></a>
     <form method="POST" action="{{ route('register') }}" id="regisztraciosform">
         @csrf
         <h1>Regisztráció</h1>
@@ -46,9 +47,9 @@
                 {{ __('Már regisztráltál?') }}
             </a>
 
-            <x-primary-button>
+            <button>
                 {{ __('Regisztrálok') }}
-            </x-primary-button>
+            </button>
         </div>
     </form>
     </div>
