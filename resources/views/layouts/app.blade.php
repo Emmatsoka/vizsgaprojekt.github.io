@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="../resources/css/app.css">
         <link rel="shortcut icon" href="Wesoc_favicon.png" type="image/x-icon">
         <title>{{ config('app.name', 'Laravel') }}</title>
-    
 
         @livewireStyles
 
+        
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
