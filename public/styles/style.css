@@ -133,7 +133,7 @@ form input{
 form button{
     width: 100% !important;
     border: none !important;
-    background: linear-gradient(to bottom, #5f00b0, #320079);
+    background: #0d181e;
     color: white !important;
     padding: 10px !important;
     border-radius: 30px !important;
@@ -142,17 +142,17 @@ form button{
     font-weight: 500 !important;
 }
 form button:hover{
-    background: linear-gradient(to bottom, #450081, #220052);
+    background: #21323a;
     transition: 0.3s all;
 }
 form a{
-    color:#5f00b0;
+    color:#923525;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s all;
 }
 form a:hover{
-    color:#320079;
+    color:#6e291d;
     transition: 0.3s all;
 }
 #remember_me{

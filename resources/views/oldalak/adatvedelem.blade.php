@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wesoc | Adatvédelem</title>
-    <link rel="shortcut icon" href="Wesoc_favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Wesoc_favicon_white.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/webs.css">
     <link rel="stylesheet" href="./styles/gorgo.css">
@@ -30,10 +30,10 @@
               <a class="nav-link" href="{{ url('tamogatas') }}"><img src="pics/support.png" height="auto" width="20px" class="nav-link-icon">Támogatás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('Projekt') }}"><img src="pics/project.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
+              <a class="nav-link" href="{{ url('projekt') }}"><img src="pics/project.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('adatvedelem') }}"><img src="pics/protect.png" height="auto" width="20px" class="nav-link-icon">Adatvédelem</a>
+              <a class="nav-link aktiv" href="{{ url('adatvedelem') }}"><img src="pics/protect.png" height="auto" width="20px" class="nav-link-icon">Adatvédelem</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('elerhetoseg') }}"><img src="pics/email.png" height="auto" width="20px" class="nav-link-icon">Elérhetőség</a>
@@ -83,7 +83,7 @@
     </p>
   </div>
   <div class="row copyright ">
-   <span id="copyright">Wesoc Copyright 2024</span>
+   <span id="copyright">Wesoc Copyright © 2024</span>
   </div>
 </footer>
 

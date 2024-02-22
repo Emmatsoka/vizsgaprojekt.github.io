@@ -27,6 +27,9 @@ Route::get('/elerhetoseg', function () {
 Route::get('/adatvedelem', function () {
     return view('oldalak.adatvedelem');
 });
+Route::get('/projekt', function () {
+    return view('oldalak.projekt');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
