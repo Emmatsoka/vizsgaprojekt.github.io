@@ -13,30 +13,30 @@
     <link rel="stylesheet" href="./styles/gorgo.css">
     <script src="./js/attunes.js"></script>
     <script src="./js/felgorget.js"></script>
-    <script src="./js/megjelenites.js"></script>
+  
     
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark megjelenites">
         
         <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center bold" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
+              <a class="nav-link" href="{{ url('tamogatas') }}"><img src="pics/support.png" height="auto" width="20px" class="nav-link-icon">Támogatás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('Projekt') }}">Projekt</a>
+              <a class="nav-link" href="{{ url('Projekt') }}"><img src="pics/project.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link aktiv" href="{{ url('adatvedelem') }}">Adatvédelem</a>
+              <a class="nav-link" href="{{ url('adatvedelem') }}"><img src="pics/protect.png" height="auto" width="20px" class="nav-link-icon">Adatvédelem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
+                <a class="nav-link" href="{{ url('elerhetoseg') }}"><img src="pics/email.png" height="auto" width="20px" class="nav-link-icon">Elérhetőség</a>
               </li>
               <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
           </ul>

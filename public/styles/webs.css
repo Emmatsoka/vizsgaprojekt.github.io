@@ -86,6 +86,9 @@ nav{
     font-family: syne-regular;
     
 }
+.nav-link-icon{
+    margin-inline-end: 8px !important;
+}
 @media only screen and (min-width: 992px) {
 .float-right{
     position: absolute;

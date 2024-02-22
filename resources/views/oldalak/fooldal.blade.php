@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/gorgo.css">
     <script src="./js/attunes.js"></script>
     <script src="./js/felgorget.js"></script>
-    <script src="./js/megjelenites.js"></script>
+  
     
 </head>
 <body>
@@ -27,16 +27,16 @@
           <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
+                <a class="nav-link" href="{{ url('tamogatas') }}"><img src="pics/support.png" height="auto" width="20px" class="nav-link-icon">Támogatás</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('Projekt') }}">Projekt</a>
+                <a class="nav-link" href="{{ url('Projekt') }}"><img src="pics/project.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('adatvedelem') }}">Adatvédelem</a>
+                <a class="nav-link" href="{{ url('adatvedelem') }}"><img src="pics/protect.png" height="auto" width="20px" class="nav-link-icon">Adatvédelem</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{ url('elerhetoseg') }}">Elérhetőség</a>
+                  <a class="nav-link" href="{{ url('elerhetoseg') }}"><img src="pics/email.png" height="auto" width="20px" class="nav-link-icon">Elérhetőség</a>
                 </li>
                 <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
             </ul>

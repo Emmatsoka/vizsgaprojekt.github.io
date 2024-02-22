@@ -8,6 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
+        
     </head>
     <body class="">
         <div class="">
