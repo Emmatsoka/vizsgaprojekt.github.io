@@ -112,6 +112,11 @@ nav{
         margin: 20px 8px 0px !important;
     
     }
+    header{
+        background-position-x: 87% !important;
+       
+    }
+   
     .gomb{
       
         padding: 8px 30px 8px !important;
@@ -436,6 +441,10 @@ footer .copyright{
     footer #copyright{
         float: none !important;
         text-align: center !important;
+    }
+    footer{
+        background-position-x: 87% !important;
+       
     }
 }
 footer h1{
