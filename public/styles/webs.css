@@ -6,9 +6,32 @@
   }
   
 @font-face {
-    font-family: syne;
-    src: url(../fonts/Syne-Regular.ttf);
+    font-family: syne-regular;
+    src: url(../fonts/syne/TTF/Syne-Regular.ttf);
   }
+  @font-face {
+    font-family: syne-bold;
+    src: url(../fonts/syne/TTF/Syne-Bold.ttf);
+  }
+  @font-face {
+    font-family: syne-extra;
+    src: url(../fonts/syne/TTF/Syne-Extra.ttf);
+  }
+  body {
+    animation: attunesanimacio ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes attunesanimacio {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .kerek{
     border-radius: 35px !important;
 }
@@ -29,12 +52,12 @@
 }
 
 .feherhtr:hover{
-    background: linear-gradient(180deg, #343434 0%, #202020 100%) !important;
+    background: linear-gradient(180deg, #2c2c2c 0%, #202020 100%) !important;
     color: white !important;
     transition: 0.4s all !important;
 }
 .feketehtr{
-    background: linear-gradient(180deg, #343434 0%, #202020 100%) !important;
+    background: linear-gradient(180deg, #2c2c2c 0%, #202020 100%) !important;
     color: white !important;
     transition: 0.4s all !important;
 }
@@ -52,13 +75,16 @@ nav{
 }
 .navbar{
     background: transparent !important;
-    position: sticky !important;;
+    position: sticky !important;
+
 }
 .nav-link{
     padding: 0px 25px !important; 
     color: white !important;
     font-size: 19px !important;
     font-weight: 500 !important;
+    font-family: syne-regular;
+    
 }
 @media only screen and (min-width: 992px) {
 .float-right{
@@ -66,6 +92,7 @@ nav{
     top: 45px!important;
     right: 60px !important;
 }
+
 .navbar-nav{
     margin-left: -100px !important  ;
 }
@@ -74,6 +101,9 @@ nav{
 @media only screen and (max-width: 992px) {
     nav{
         padding: 40px 40px 30px !important;
+    }
+    #headerszoveg p{
+        line-height: 20pt !important;
     }
     #headergombok a{
         margin: 20px 8px 0px !important;
@@ -120,6 +150,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../pics/htr.png');   
+    background-attachment: fixed ;
    
 }
 #headerszoveg{
@@ -129,21 +160,22 @@ header{
     z-index: 600!important;
 }
 #headerszoveg h1{
-    font-size: clamp(50px, 5vw, 10vw);
-    font-family: krona;
+    font-size: clamp(50px, 4.60vw, 10vw);
+    font-family: syne-extra;
+    padding:0px 20px 0px;
+    word-wrap:break-word !important; 
 }
-.masbetu{
-    font-family: syne;
-    font-size: clamp(50px, 6vw, 10vw);
-}
+
 #headerszoveg p{
-    font-size:  clamp(19px, 1.25vw, 10vw);
+    font-size:  clamp(19px, 1.45vw, 10vw);
     max-width: 650px !important;
     margin: 0 auto;
     margin-top: 20px !important;
-    padding: 0px 15px 0px  !important;
-    font-family: krona;
+    padding: 0px 20px 0px  !important;
+    line-height: 26pt;
     color: #e6daff;
+    font-family: syne-regular;
+
 }
 #headergombok a{
     margin: 20px 12px 0px !important;
@@ -158,6 +190,25 @@ header{
     font-weight: 500 !important;
 }
 
+
+.attunes {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.attunes.aktivv {
+    transform: translateY(0);
+    opacity: 1;
+}
+.megjelenes {
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+.megjelenes.aktivv{
+    opacity: 1;
+}
 #tartalom{
     height: fit-content;
 }
@@ -205,6 +256,7 @@ body{
 }
 #bemutato2 p, #bemutato p{
     font-size: 17px !important;
+    font-family: syne-regular;
    
 }
 
@@ -215,13 +267,18 @@ body{
 }
 #bemutato2 #szoveg{
     max-width: 500px !important;
+ 
 }
 #bemutato2 .col-lg-4{
     padding: 40px !important;
+
+
 }
 #bemutato2 .row{
     margin-top: 40px !important;
+
 }
+
 .row{
     margin-right: 0px !important;
     margin-left: 0px !important;
@@ -234,7 +291,9 @@ body{
   
 .navbar-toggler {
     border-color: transparent !important;
+    border-radius: 25px !important;
     background: linear-gradient(180deg, white 0%, #DCDCDC 100%) !important;
+   
   }
 
   .navbar-toggler:focus,
@@ -255,6 +314,7 @@ footer{
     background-image: url('../pics/htr.png');   
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed ;
     height: fit-content !important;
     margin-top: 200px;
     padding: 0px 0px 50px;
@@ -279,11 +339,13 @@ footer p{
     background-color: rgba(0, 0, 0, 0.068);
     border-radius: 30px;
     backdrop-filter: blur(15px);
+    font-family: syne-regular !important;
 }
 footer #copyright{
     text-align: right !important;
     float: right !important;
     font-weight: 700;
+    font-family: syne-bold !important;
 }
 footer .copyright{
     padding: 10px !important;
