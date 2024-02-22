@@ -152,7 +152,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../pics/htr.png');   
+    background-image: url('../pics/htr2.jpg');   
     background-attachment: fixed ;
    
 }
@@ -176,7 +176,7 @@ header{
     margin-top: 20px !important;
     padding: 0px 20px 0px  !important;
     line-height: 26pt;
-    color: #e6daff;
+    color: #ffffffec;
     font-family: syne-regular;
 
 }
@@ -252,7 +252,7 @@ body{
 #bemutato2{
     margin: 0 auto !important;
    
-    background-color: #450081;
+    background-color: #0d181e;
     padding: 20px !important;
    color: white !important;
    font-family: Arial, Helvetica, sans-serif !important;
@@ -313,8 +313,8 @@ body{
   }
 footer{
     color: white !important;
-    background-color: #6322fa;
-    background-image: url('../pics/htr.png');   
+    background-color: #0d181e;
+    background-image: url('../pics/htr2.jpg');   
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed ;
@@ -451,7 +451,7 @@ footer h1{
 .err{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../pics/htr.png');  
+    background-image: url('../pics/htr2.jpg');  
     height: 100vh; 
     margin: 0;
 }
