@@ -1,5 +1,5 @@
 body {
-    animation: attunesanimacio ease 1s;
+    animation: attunesanimacio ease 1.30s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -81,7 +81,7 @@ form h1{
 }
 
 #password, #email, #password_confirmation, #name{
-    border: 1px rgb(190, 190, 190) solid;
+    border: 1px rgb(207, 207, 207) solid;
     border-radius: 30px !important;
     padding: 8px;
     width: 100%;

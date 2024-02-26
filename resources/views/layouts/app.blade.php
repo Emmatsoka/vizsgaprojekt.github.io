@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="../resources/css/app.css">
         <link rel="shortcut icon" href="Wesoc_favicon_white.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         @livewireStyles

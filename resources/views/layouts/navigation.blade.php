@@ -83,13 +83,36 @@
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <x-responsive-nav-link :href="route('logout')"
-                            onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
+
                 </form>
             </div>
         </div>
     </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light megjelenites">
+        
+    <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('tamogatas') }}">Támogatás</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('projekt') }}">Projekt</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('logout') }}">{{ __('Log Out') }}</a>
+        </li>
+
+          <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
+      </ul>
+ 
+    
+  </div>
 </nav>

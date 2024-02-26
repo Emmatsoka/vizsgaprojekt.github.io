@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./styles/webs.css">
     <link rel="stylesheet" href="./styles/gorgo.css">
     <script src="./js/attunes.js"></script>
-    <script src="./js/felgorget.js"></script>
-  
+    <script src="./js/ujratoltfelgorget.js"></script>
+    <script src="./js/felgorgetes.js"></script>
     
 </head>
 <body>
+  <button onclick="fel()" id="felgorget" ><img src="pics/fel.png"></button>
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark megjelenites">
         
@@ -55,8 +56,20 @@
     
       </header>
      <div id="tartalom">
-
+      <section id="szekcio1">
+      <div class="row justify-content-center attunes">
+        <div class="col-lg-4 attunes">
+          bla 
+        </div>
+        <div class="col-lg-4 attunes">
+          bla
+        </div>
+        <div class="col-lg-4 attunes">
+          bla
+        </div>
+      </div>
      </div>
+    </div>
      <footer class="attunes">
 
   
