@@ -79,7 +79,7 @@
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes">
-                  <img src="pics/sample.png" height="auto"  class="img-fluid">
+                  <img src="pics/question.png" height="auto"  class="img-fluid">
                 </div>
             </div>
           </section>
@@ -94,7 +94,7 @@
               <div class="row justify-content-center attunes">
                 
                 <div class="col-lg-4 text-center balattunes">
-                  <img src="pics/sample2.jpg" height="auto"  class="img-fluid">
+                  <img src="pics/design.png" height="auto"  class="img-fluid">
                 </div>
                 
                 <div class="col-lg-4 attunes balra">
@@ -127,7 +127,7 @@
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes">
-                  <img src="pics/sample3.jpg" height="auto"  class="img-fluid">
+                  <img src="pics/together.png" height="auto"  class="img-fluid">
                 </div>
             </div>
             <div class="row justify-content-center ">
