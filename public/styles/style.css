@@ -159,3 +159,7 @@ form a:hover{
     border-radius: 10px !important;
     
 }
+x-input-label::after{
+    content: '*' !important;
+    color: red !important;
+}
