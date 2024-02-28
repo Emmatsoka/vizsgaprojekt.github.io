@@ -31,7 +31,7 @@
               <a class="nav-link" href="{{ url('tamogatas') }}"><img src="pics/support.png" height="auto" width="20px" class="nav-link-icon">Támogatás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('projekt') }}"><img src="pics/project.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
+              <a class="nav-link" href="{{ url('projekt') }}"><img src="pics/projekt.png" height="auto" width="20px" class="nav-link-icon">Projekt</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('adatvedelem') }}"><img src="pics/protect.png" height="auto" width="20px" class="nav-link-icon">Adatvédelem</a>
