@@ -74,8 +74,11 @@
                 <div class="col-lg-4 attunes jobbra">
                 <h1 >Mit várhatsz a weboldalunktól?</h1>
                   <p>
-                   
-                  Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. Duis ultricies lacus sed turpis tincidunt id aliquet.  
+                    A mi kis virtuális világunkban, ahol az online tér összehoz minket, hogy megosszuk gondolatainkat, élményeinket és inspirációinkat! Itt minden egyes kattintás egy új kapcsolatot jelent, egy új lehetőséget és egy újabb lépést a közösségünk felé.
+                    Amikor ránk találsz, ne csak egy újabb szociális média platformot várj tőlünk. Várj el egy olyan közösséget, ahol a kreativitás és az egyediség szárnyra kap, ahol minden poszt mögött valódi történetek, érzelmek és tapasztalatok rejlenek. Várj el egy helyet, ahol a véleményed számít, és ahol a sokszínűségben megtalálhatod a saját hangodat.
+                    <br>
+                    <br>
+                    Tehát, mit várhatsz tőlünk? Várj el többet, mint csak egy weboldalt. Várj el egy közösséget, ahol otthonra lelsz az online térben. Itt a saját történeted részévé válhatsz, és velünk együtt építheted azt a digitális világot, amelyben szeretnél lenni. Készen állsz csatlakozni? Akkor üdvözöllek, ahol minden egyes pillanat számít!
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes">
