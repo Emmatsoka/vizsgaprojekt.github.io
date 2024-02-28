@@ -61,3 +61,20 @@ window.addEventListener("scroll", reveal3);
 
 reveal3();
 
+function reveal4() {
+  var reveals = document.querySelectorAll(".attunes2");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 5;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("aktivv");
+    } else {
+      reveals[i].classList.remove("aktivv");
+    }
+  }
+}
+
+reveal4();

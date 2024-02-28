@@ -264,7 +264,16 @@ header{
     opacity: 0;
     transition: 1s all ease;
 }
-
+.attunes2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.attunes2.aktivv {
+    transform: translateY(0);
+    opacity: 1;
+}
 .attunes.aktivv {
     transform: translateY(0);
     opacity: 1;
@@ -527,24 +536,22 @@ footer h1{
     padding: 8px ;
     margin:0 auto !important;
     margin-bottom:20px !important;
-
     border-radius: 30px !important;
     color: white !important;
     font-weight: 400;
     font-size: 30px;
     font-family: krona;
     max-width: 100%;
-    
 }
 
 footer hr{
     width: 80% !important;
-
-    border-top: 1px solid #38586b !important;
+    border-top: 1px solid #49728a !important;
 }
 .footer-icon{
     margin-inline-end: 8px !important;
 }
+
 #csatlakozzhozzank{
     padding: 15px 40px 15px !important;
     font-size:  clamp(15px, 1vw, 10vw);
