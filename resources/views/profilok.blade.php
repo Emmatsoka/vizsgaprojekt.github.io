@@ -1,2 +1,5 @@
-<h1>Felhasználói profil</h1>
-<p>Név: {{ Auth::user()->name }}</p>
+<h1>Összes felhasználó profilja</h1>
+
+@foreach ($users as $user)
+    <p>Név: {{ $user->name }}</p>
+@endforeach
