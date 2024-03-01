@@ -43,3 +43,7 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
+
+Route::get('/profilom', function () {
+    return view('profile.show');
+});

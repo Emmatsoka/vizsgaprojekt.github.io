@@ -34,7 +34,7 @@ body {
 
 form{
     z-index: 200 !important;
-    background-color: white !important;
+    background-color: #f7f6f6 !important;
     border-radius: 30px !important;
     padding: 30px !important;
     max-width: fit-content;
@@ -92,7 +92,7 @@ form h1{
         max-width: 100% !important;
         height: 100vh !important;
         border-radius: 0px !important;
-        background-color: rgb(255, 255, 255) !important;
+        background-color: #f7f6f6 !important;
         backdrop-filter: blur(5px);
     
     }
@@ -125,7 +125,7 @@ form label{
     
 }
 form input{
-    background-color: rgb(243, 243, 243);
+    background-color: #f3f3f3;
     transition: 0.3s !important;
 
 }

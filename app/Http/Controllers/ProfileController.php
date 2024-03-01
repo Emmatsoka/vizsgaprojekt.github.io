@@ -68,7 +68,15 @@ class ProfileController extends Controller
         return view('profilok')->with('users', $users);
     }
 
-}
+    public function profile()
+    {
+        $users = User::all(); // Lekéred az összes felhasználót
+
+        return view('profilok');
+    }
+    }
+    
+    
 
 
 

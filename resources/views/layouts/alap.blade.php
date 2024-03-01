@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="../resources/css/app.css">
         <link rel="shortcut icon" href="Wesoc_favicon_white.png" type="image/x-icon">
         <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles/app-main.css">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        @livewireStyles
+       
 
         
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+    <body class="">
+        <div class="">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -31,6 +32,8 @@
                 {{ $slot }}
             </main>
         </div>
-        @livewireScripts 
+        @include('layouts.footer ')
+        <script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
+     
 </html>

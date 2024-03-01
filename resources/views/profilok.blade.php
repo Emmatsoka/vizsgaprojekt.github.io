@@ -1,5 +1,9 @@
-<h1>Összes felhasználó profilja</h1>
+<x-app-layout>
+    <div class="text-white">
+<h1 class="text-white">Összes felhasználó profilja</h1>
 
 @foreach ($users as $user)
-    <p>Név: {{ $user->name }}</p>
+    <p><b>Név:</b> {{ $user->name }}</p>
 @endforeach
+</div>
+</x-app-layout>
