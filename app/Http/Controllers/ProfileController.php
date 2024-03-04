@@ -74,7 +74,7 @@ class ProfileController extends Controller
 
         return view('profilok');
     }
-    }
+}
     
     
 
