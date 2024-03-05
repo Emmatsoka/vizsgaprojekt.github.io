@@ -20,7 +20,7 @@
   <button onclick="fel()" id="felgorget" ><img src="pics/fel.png"></button>
     <header>
 
-      <nav class="navbar navbar-expand-lg navbar-dark megjelenites">
+      <nav class="navbar navbar-expand-lg navbar-dark megjelenites ">
         
           <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

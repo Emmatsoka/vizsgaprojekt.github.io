@@ -32,7 +32,13 @@ class ProfileController extends Controller
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }
-
+        if($request->hasFile('profilkep')){
+            
+        $avatarName = time().'.'.$request->profilkep->getClientOriginalExtension();
+        $request->profilkep->move(public_path('user'), $avatarName);
+  
+        Auth()->user()->update(['profilkep'=>$avatarName]);
+        }
         $request->user()->save();
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
@@ -74,7 +80,8 @@ class ProfileController extends Controller
 
         return view('profilok');
     }
-}
+
+   }
     
     
 

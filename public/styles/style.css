@@ -42,9 +42,12 @@ form{
     margin:0 auto !important;
   
 }
+#regisztraciosform>#logo{
+    top: 10vh;
+}
 #regisztraciosform{
 
-    margin-top: 25vh !important;
+    margin-top: 20vh !important;
 }
 #bejelentkezesform, #elfelejtettjelszoform{
     margin-top: 25vh !important;
@@ -56,6 +59,9 @@ form{
     transform: translateX(-50%);
     position: absolute;
     transition: 0.3s all;
+}
+body:has(#regisztraciosform) #logo{
+    top: 10vh !important;
 }
 #logo:hover{
     opacity: 70% !important;
@@ -80,7 +86,7 @@ form h1{
 
 }
 
-#password, #email, #password_confirmation, #name{
+#password, #email, #password_confirmation, #name, #username{
     border: 1px rgb(207, 207, 207) solid;
     border-radius: 30px !important;
     padding: 8px;

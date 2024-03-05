@@ -15,7 +15,7 @@
             <ul class="navbar-nav">
                 <div class="dropdown">
                     <a class=" dropdown-toggle text-dark" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="pics/pkep.png" height="auto" width="35px">{{ Auth::user()->name }}
+                        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" height="auto" width="35px">{{ Auth::user()->name }}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{ url('profilom') }}">{{ __('Profilom') }}</a></li>
