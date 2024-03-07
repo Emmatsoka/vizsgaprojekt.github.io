@@ -78,3 +78,15 @@ function reveal4() {
 }
 
 reveal4();
+
+
+var bg = document.querySelector('.mozgatas');
+var windowWidth = window.innerWidth / 5;
+var windowHeight = window.innerHeight / 5 ;
+
+bg.addEventListener('mousemove', (e) => {
+  var mouseX = e.clientX / windowWidth;
+  var mouseY = e.clientY / windowHeight;
+  
+  bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+});

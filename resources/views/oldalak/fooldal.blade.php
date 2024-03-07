@@ -14,11 +14,13 @@
     <script src="./js/attunes.js"></script>
     <script src="./js/ujratoltfelgorget.js"></script>
     <script src="./js/felgorgetes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/mozgatas.js"></script>
     
 </head>
 <body>
   <button onclick="fel()" id="felgorget" ><img src="pics/fel.png"></button>
-    <header>
+    <header class="header">
 
       <nav class="navbar navbar-expand-lg navbar-dark megjelenites ">
         
@@ -77,13 +79,13 @@
                     A weboldaltól azt várhatod hogy egy biztonságos közegben lehetsz egy jól működő,letisztult szociális oldalon.Az egyszerűség és a funkcionalitás ötvözése révén a felhasználókat könnyedén elvezethetjük a kívánt célok eléréséhez.
                   </p>
                 </div>
-                <div class="col-lg-4 text-center jobbattunes">
+                <div class="col-lg-4 text-center jobbattunes ">
                   <img src="pics/question.png" height="auto"  class="img-fluid">
                 </div>
             </div>
           </section>
           <div class="attunes">
-          <svg class="sectfelwave" class="img-fluid" width="100%" style=" transition: 0.3s" viewBox="0 60 1440 280" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <svg class="sectfelwave" class="img-fluid mozgatas" width="100%" style=" transition: 0.3s" viewBox="0 60 1440 280" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path style="transform:translate(0, 0px); opacity:1"      fill="#0d181e" d="M0,168L21.8,144.7C43.6,121,87,75,131,70C174.5,65,218,103,262,135.3C305.5,168,349,196,393,214.7C436.4,233,480,243,524,214.7C567.3,187,611,121,655,98C698.2,75,742,93,785,116.7C829.1,140,873,168,916,172.7C960,177,1004,159,1047,149.3C1090.9,140,1135,140,1178,140C1221.8,140,1265,140,1309,149.3C1352.7,159,1396,177,1440,163.3C1483.6,149,1527,103,1571,74.7C1614.5,47,1658,37,1702,32.7C1745.5,28,1789,28,1833,60.7C1876.4,93,1920,159,1964,177.3C2007.3,196,2051,168,2095,168C2138.2,168,2182,196,2225,186.7C2269.1,177,2313,131,2356,130.7C2400,131,2444,177,2487,168C2530.9,159,2575,93,2618,93.3C2661.8,93,2705,159,2749,182C2792.7,205,2836,187,2880,182C2923.6,177,2967,187,3011,177.3C3054.5,168,3098,140,3120,126L3141.8,112L3141.8,280L3120,280C3098.2,280,3055,280,3011,280C2967.3,280,2924,280,2880,280C2836.4,280,2793,280,2749,280C2705.5,280,2662,280,2618,280C2574.5,280,2531,280,2487,280C2443.6,280,2400,280,2356,280C2312.7,280,2269,280,2225,280C2181.8,280,2138,280,2095,280C2050.9,280,2007,280,1964,280C1920,280,1876,280,1833,280C1789.1,280,1745,280,1702,280C1658.2,280,1615,280,1571,280C1527.3,280,1484,280,1440,280C1396.4,280,1353,280,1309,280C1265.5,280,1222,280,1178,280C1134.5,280,1091,280,1047,280C1003.6,280,960,280,916,280C872.7,280,829,280,785,280C741.8,280,698,280,655,280C610.9,280,567,280,524,280C480,280,436,280,393,280C349.1,280,305,280,262,280C218.2,280,175,280,131,280C87.3,280,44,280,22,280L0,280Z" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
           </svg>
           <section id="szekcio2" >
@@ -123,7 +125,7 @@
                     Csal rád és barátaidra várunk hogy csatlakozzatok eme remek családias\barátias oldalra és hogy kihasznájuk a lehetőségeit!
                   </p>
                 </div>
-                <div class="col-lg-4 text-center jobbattunes">
+                <div class="col-lg-4 text-center jobbattunes ">
                   <img src="pics/together.png" height="auto"  class="img-fluid">
                 </div>
             </div>

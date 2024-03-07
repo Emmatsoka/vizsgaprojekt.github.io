@@ -212,7 +212,8 @@ nav{
 }
 header{
     height: 100vh;
-    background-size: cover;
+    background-position:center;
+    background-size: cover !important;
     background-repeat: no-repeat;
     background-image: url('../pics/htr2.jpg');   
     background-attachment: fixed ;
@@ -301,6 +302,12 @@ header{
     transform: translateX(0);
     opacity: 1;
 }
+
+@media only screen and (min-width: 1500px) {
+    header{
+        background-size: 105% !important;
+    }
+}
 @media only screen and (min-width: 992px) {
     .jobbattunes {
         position: inherit;
@@ -308,7 +315,7 @@ header{
         opacity: 0;
         transition: 2s all ease;
     }
-    
+   
     .jobbattunes.aktivv {
         transform: translateX(0);
         opacity: 1;
@@ -628,6 +635,13 @@ footer hr{
       d: path("M 0,400 L 0,150 C 104.38974358974357,161.32564102564103 208.77948717948715,172.65128205128207 284,183 C 359.22051282051285,193.34871794871793 405.2717948717949,202.72051282051282 476,192 C 546.7282051282051,181.27948717948718 642.1333333333334,150.46666666666664 740,122 C 837.8666666666666,93.53333333333335 938.1948717948719,67.41282051282052 1002,93 C 1065.805128205128,118.58717948717948 1093.0871794871796,195.8820512820513 1160,214 C 1226.9128205128204,232.1179487179487 1333.4564102564102,191.05897435897435 1440,150 L 1440,400 L 0,400 Z");
     }
   }
+
+.mozgas{
+    
+}
+
+
+
 
 /* ---------------------- 404 ------------------------- */ 
 
