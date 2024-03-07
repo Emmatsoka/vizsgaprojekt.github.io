@@ -14,11 +14,12 @@
     <script src="./js/attunes.js"></script>
     <script src="./js/ujratoltfelgorget.js"></script>
     <script src="./js/felgorgetes.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/mozgatas.js"></script>
 </head>
 <body>
   <button onclick="fel()" id="felgorget" ><img src="pics/fel.png"></button>
-    <header>
+    <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark megjelenites">
         
         <a class="navbar-brand" href="{{ url('fooldal') }}"><img src="Wesoc_logo_white_png.png" height="auto" width="120px"></a>
