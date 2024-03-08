@@ -76,7 +76,7 @@
                 <div class="col-lg-4 attunes jobbra">
                 <h1 >Mit várhatsz a weboldalunktól?</h1>
                   <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloribus eum illo inventore cupiditate sint vitae magni? Tenetur cupiditate odit rerum accusantium, nesciunt porro recusandae similique molestias repellat ratione in?
+                    A weboldaltól azt várhatod hogy egy biztonságos közegben lehetsz egy jól működő,letisztult szociális oldalon.Az egyszerűség és a funkcionalitás ötvözése révén a felhasználókat könnyedén elvezethetjük a kívánt célok eléréséhez.
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes ">
@@ -101,8 +101,7 @@
                 <div class="col-lg-4 attunes balra">
                 <h1>Gondos dizájn, letiszult megjelenés.</h1>
                   <p>
-                  
-                  Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. Duis ultricies lacus sed turpis tincidunt id aliquet. 
+                    A minimalista megközelítés és a letisztult dizájn segíti a felhasználók figyelmének koncentrálását a lényeges tartalomra, és így fokozza az élményt és a felhasználói elégedettséget.
                   </p>
               
               </div>
@@ -123,8 +122,7 @@
                 <div class="col-lg-4 attunes jobbra">
                 <h1> Mire vársz még? Csatlakozz hozzánk!</h1>
                   <p>
-                    
-                  Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. 
+                    Csal rád és barátaidra várunk hogy csatlakozzatok eme remek családias\barátias oldalra és hogy kihasznájuk a lehetőségeit!
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes ">
@@ -148,8 +146,7 @@
         <div class="col-lg-3">
         <h1 class="attunes"><img src="pics/goal.png" height="auto" width="30px" class="footer-icon">Célunk</h1>
         <p class="attunes">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit. Bibendum ut tristique et egestas quis. Duis ultricies lacus sed turpis tincidunt id aliquet. 
-      </p>
+          Célunk az, hogy egy olyan szociális média platformot teremtsünk, ahol mindenki otthon érezheti magát, ahol az emberek kapcsolatokat építhetnek, inspirálódhatnak, és megoszthatják életüket és szenvedélyeiket másokkal.      </p>
         </div>
         <div class="col-lg-3">
         <h1 class="attunes"><img src="pics/navigation.png" height="auto" width="30px" class="footer-icon">Navigáció</h1>
