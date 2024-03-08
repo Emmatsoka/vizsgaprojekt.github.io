@@ -21,26 +21,36 @@ class ProfileController extends Controller
             'user' => $request->user(),
         ]);
     }
-
+    public function show($username)
+    {
+        $user = User::where('username', $username)->firstOrFail();
+        return view('profil', ['user' => $user]);
+    }
     /**
      * Update the user's profile information.
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
-
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        $user = $request->user();
+    
+        $user->fill($request->validated());
+    
+        if ($user->isDirty('email')) {
+            $user->email_verified_at = null;
         }
-        if($request->hasFile('profilkep')){
-            
-        $avatarName = time().'.'.$request->profilkep->getClientOriginalExtension();
-        $request->profilkep->move(public_path('user'), $avatarName);
-  
-        Auth()->user()->update(['profilkep'=>$avatarName]);
+    
+        if ($request->hasFile('profilkep')) {
+            $avatarName = $request->file('profilkep')->hashName();
+            $request->file('profilkep')->move(public_path('user'), $avatarName);
+            $user->profilkep = $avatarName;
         }
-        $request->user()->save();
-
+        if ($request->hasFile('boritokep')) {
+            $coverName = $request->file('boritokep')->hashName();
+            $request->file('boritokep')->move(public_path('boritokepek'), $coverName);
+            $user->boritokep = $coverName;
+        }
+        $user->save();
+    
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
 

@@ -47,7 +47,7 @@ form{
 }
 #regisztraciosform{
 
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
 }
 #bejelentkezesform, #elfelejtettjelszoform{
     margin-top: 25vh !important;
@@ -61,7 +61,7 @@ form{
     transition: 0.3s all;
 }
 body:has(#regisztraciosform) #logo{
-    top: 10vh !important;
+    top: 5vh !important;
 }
 #logo:hover{
     opacity: 70% !important;
@@ -86,7 +86,7 @@ form h1{
 
 }
 
-#password, #email, #password_confirmation, #name, #username{
+#password, #email, #password_confirmation, #name, #username, #szulev{
     border: 1px rgb(207, 207, 207) solid;
     border-radius: 30px !important;
     padding: 8px;

@@ -26,14 +26,22 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="name" class="form-label">{{ __('Profilkép') }}</label>
-                    <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" alt="" srcset="" class="img-fluid">
-                    <input id="avatar" type="file" class="form-control" name="profilkep" value="{{ old('profilkep') }}" required autocomplete="avatar">
-                     
-                    @error('image')
+                    <label for="profilkep" class="form-label">{{ __('Profilkép') }}</label>
+                    <img src="{{ URL::asset('user/' . Auth::user()->profilkep) }}" alt="" srcset="" class="img-fluid">
+                    <input id="profilkep" type="file" class="form-control" name="profilkep" value="{{ old('profilkep') }}" required autocomplete="avatar">
+                    
+                    @error('profilkep')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
+                 
+    <div class="mt-4">
+        <x-label for="boritokep" :value="__('Borítókép')" />
+        <input id="boritokep" type="file" class="block mt-1 w-full" value="{{ old('profilkep') }}" name="boritokep" accept="image/*">
+        @error('boritokep')
+            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+        @enderror
+    </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">{{ __('E-mail') }}</label>
                     <input id="email" name="email" type="email" class="form-control" value="{{ old('email', $user->email) }}" required autocomplete="username">

@@ -14,18 +14,16 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-
             $table->string('username')->unique();
             $table->string('profilkep')->default('felhasznalo.png');
+            $table->string('boritokep')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-
             $table->string('bemutatkozas')->default('Nincs megadva');
             $table->string('lakhely')->default('Nincs megadva');
             $table->date('szulev')->default('1979-01-01');
             $table->text('neme')->default('Nincs megadva');
-            
             $table->rememberToken();
             $table->timestamps();
         });

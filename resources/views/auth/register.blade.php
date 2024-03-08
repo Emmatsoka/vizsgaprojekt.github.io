@@ -20,8 +20,14 @@
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('EMAIL')" /><br>
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="pl: valaminev@gmail.com"/>
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required  placeholder="pl: valaminev@gmail.com"/>
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <div class="mt-4">
+            <x-input-label for="szulev" :value="__('SZÜLETÉSI ÉV')" /><br>
+            <x-text-input id="szulev" class="block mt-1 w-full" type="date" name="szulev" :value="old('szulev')" required />
+            <x-input-error :messages="$errors->get('szulev')" class="mt-2" />
         </div>
 
         <!-- Password -->

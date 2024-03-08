@@ -4,15 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" href="../resources/css/app.css">
-        <link rel="shortcut icon" href="Wesoc_favicon_white.png" type="image/x-icon">
-        <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./styles/app-main.css">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="shortcut icon" href="{{ asset('Wesoc_favicon_white.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ asset('styles/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/app-main.css') }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
-
-       
-
-        
     </head>
     <body class="">
         <div class="">
@@ -32,8 +28,7 @@
                 {{ $slot }}
             </main>
         </div>
-        @include('layouts.footer ')
-        <script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+        @include('layouts.footer')
+        <script src="{{ asset('styles/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     </body>
-     
 </html>
