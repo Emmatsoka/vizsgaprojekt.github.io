@@ -46,7 +46,7 @@ class ProfileController extends Controller
         }
         if ($request->hasFile('boritokep')) {
             $coverName = $request->file('boritokep')->hashName();
-            $request->file('boritokep')->move(public_path('boritokepek'), $coverName);
+            $request->file('boritokep')->move(public_path('user'), $coverName);
             $user->boritokep = $coverName;
         }
         $user->save();

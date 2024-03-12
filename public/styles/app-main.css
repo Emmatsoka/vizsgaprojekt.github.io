@@ -248,3 +248,38 @@ border-radius: 25px !important;
 .profilszerkesztes form img{
     
 }
+#profil{
+    padding: 10px ;
+  
+}
+#boritokep{
+    width: 100%;
+ 
+    max-height: 25vh ;
+}
+#profilkep{
+    max-width: 150px !important;
+    margin:0 auto !important;
+    border:white 3px solid;
+    border-radius: 100% !important;
+    margin-top: -60px !important;
+}
+#profilrow{
+    margin-bottom: 20px !important;
+}
+
+.tartalomrow .card{
+    padding: 25px !important;
+}
+#bio h5{
+    font-weight: 600 !important;
+}
+.card{
+    border: none !important;
+}
+#profilrow .col-md .card{
+    padding-bottom: 10px !important;
+}
+#profil .card{
+    border-radius: 20px !important ;
+}

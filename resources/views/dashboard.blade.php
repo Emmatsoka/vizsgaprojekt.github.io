@@ -12,7 +12,7 @@
             </div>
 
             <!-- Középső tartalomterület -->
-            <div class="col-md-6 " id="kozepsosav">
+            <div class="col-md " id="kozepsosav">
                 <!-- Ide jöhetnek a bejegyzések és egyéb tartalmak -->
                 <div class=" ps-2 pe-2 ">
                  
