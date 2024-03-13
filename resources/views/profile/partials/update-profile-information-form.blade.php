@@ -32,6 +32,21 @@
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror 
                 </div>
+
+                <div class="mb-3">
+                <label for="profilkep" class="form-label">{{ __('Profil & Borítókép') }}</label>
+                    <img id="boritokep" src="{{ URL::asset('user/' . Auth::user()->boritokep) }}" alt="" srcset="" class="img-fluid">
+                    <img id="profilkep" src="{{ URL::asset('user/' . Auth::user()->profilkep) }}" alt="" srcset="" class="img-fluid">
+                    <input  type="file" class="form-control" name="boritokep" value="{{ old('boritokep') }}" autocomplete="avatar">
+                    <input  type="file" class="form-control" name="profilkep" value="{{ old('profilkep') }}" autocomplete="avatar">
+                 
+          
+                  
+                
+                    @error('profilkep')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
     <div class="mb-3">
                     <label for="email" class="form-label">{{ __('E-mail') }}</label>
                     <input id="email" name="email" type="email" class="form-control" value="{{ old('email', $user->email) }}" required autocomplete="username">
