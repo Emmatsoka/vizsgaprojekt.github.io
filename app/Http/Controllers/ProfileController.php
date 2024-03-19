@@ -29,11 +29,13 @@ class ProfileController extends Controller
     {
         $user = $request->user();
     
-      
-    
-        if ($user->isDirty('email')) {
-            $user->email_verified_at = null;
-        }
+ 
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->bemutatkozas = $request->bemutatkozas;
+        $user->neme = $request->neme;
+        $user->lakhely = $request->lakhely;
+        $user->szulev = $request->szulev;
     
         if ($request->hasFile('profilkep')) {
             $avatarName = $request->file('profilkep')->hashName();
@@ -45,6 +47,7 @@ class ProfileController extends Controller
             $request->file('boritokep')->move(public_path('user'), $coverName);
             $user->boritokep = $coverName;
         }
+    
         $user->save();
     
         return Redirect::route('profile.edit')->with('status', 'profile-updated');

@@ -220,12 +220,12 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     font-family: syne-bold !important;
 }
 
-.profilszerkesztes form input:focus{
+.profilszerkesztes form input:focus, .profilszerkesztes form textarea:focus, .profilszerkesztes form select:focus{
     border: 1px rgb(160, 160, 160) solid !important;
     background-color: rgb(238, 238, 238);
     outline: none !important ;
 }
-.profilszerkesztesform input:hover{
+.profilszerkesztesform input:hover, .profilszerkesztesform textarea:hover, .profilszerkesztesform select:hover{
     background-color: rgb(238, 238, 238);
     transition: 0.3s !important;
 }
@@ -248,7 +248,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 .profilszerkesztes #boritokep{
     border-radius: 20px !important;
 }
-.profilszerkesztes form input{
+.profilszerkesztes form input, .profilszerkesztes form textarea, .profilszerkesztes form select{
     background-color: #f0f0f0;
     transition: 0.3s !important;
 border-radius: 25px !important;
@@ -269,7 +269,7 @@ border-radius: 25px !important;
 #boritokep{
     width: 100%;
  
-    max-height: 25vh ;
+    max-height: 40vh ;
 }
 #profil #profilkep{
     max-width: 150px !important;
