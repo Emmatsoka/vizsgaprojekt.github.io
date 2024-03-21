@@ -2,10 +2,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <header class="mb-4">
-                <h2 class="text-lg font-medium text-dark">
+                <h2 class="text-lg font-medium ">
                     {{ __('Profil frissítése') }}
                 </h2>
-                <p class="mt-1 text-sm text-dark">
+                <p class="mt-1 text-sm ">
                     {{ __("Frissítse fiókja profilinformációit és e-mail címét.") }}
                 </p>
             </header>
@@ -21,12 +21,19 @@
                 <!-- Név -->
                 <div class="mb-3">
                     <label for="name" class="form-label">{{ __('Név') }}</label>
-                    <input id="name" name="name" type="text" class="form-control" value="{{ old('name', $user->name) }}" required autofocus autocomplete="name">
+                    <input id="name" name="name" type="text" class="form-control" value="{{ old('name', $user->name) }}" required autocomplete="name">
                     @error('name')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-            
+                <!-- Felhasználónév -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">{{ __('Felhasználónév') }}</label>
+                    <input id="username" name="username" type="text" class="form-control" value="{{ old('username', $user->username) }}" required autocomplete="username">
+                    @error('username')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
                 <!-- Bemutatkozás -->
                 <div class="mb-3">
                     <label for="bemutatkozas" class="form-label">{{ __('Bemutatkozás') }}</label>
@@ -40,6 +47,9 @@
                 <div class="mb-3">
                     <label for="neme" class="form-label">{{ __('Nem') }}</label>
                     <select id="neme" name="neme" class="form-control" required autocomplete="neme">
+                        @if ($user->neme == 'Nincs megadva')
+                        <option value="férfi" {{ old('neme', $user->neme) === 'férfi' ? 'selected' : '' }}>Nincs megadva</option>
+                        @endif
                         <option value="férfi" {{ old('neme', $user->neme) === 'férfi' ? 'selected' : '' }}>Férfi</option>
                         <option value="nő" {{ old('neme', $user->neme) === 'nő' ? 'selected' : '' }}>Nő</option>
                         <option value="egyéb" {{ old('neme', $user->neme) === 'egyéb' ? 'selected' : '' }}>Egyéb</option>
@@ -67,21 +77,6 @@
                     @enderror
                 </div>
             
-                <!-- Profil és borítókép -->
-                <div class="mb-3">
-                    <label for="profilkep" class="form-label">{{ __('Profilkép') }}</label>
-                    <input type="file" class="form-control" name="profilkep">
-                    @error('profilkep')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-3">
-                    <label for="boritokep" class="form-label">{{ __('Borítókép') }}</label>
-                    <input type="file" class="form-control" name="boritokep">
-                    @error('boritokep')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
             
                 <!-- Email -->
                 <div class="mb-3">

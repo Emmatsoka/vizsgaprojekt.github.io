@@ -36,12 +36,17 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/profile/vedelem', [ProfileController::class, 'vedelem'])->name('profile.vedelem');
+    Route::patch('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile/profilkep', [ProfileController::class, 'profilkep'])->name('profile.profilkep');
+    Route::post('/barat/jeloles/{barat_id}', [ProfileController::class, 'jeloles'])->name('barat.jeloles');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::get('/baratok/{username}', [ProfileController::class, 'baratok'])->name('baratok');
 });
 
 require __DIR__.'/auth.php';
 
 Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
 Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
+

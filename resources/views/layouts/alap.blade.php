@@ -11,6 +11,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
     </head>
     <body class="">
+        <div id="htrszin"></div>
         <div class="">
             @include('layouts.navigation')
 

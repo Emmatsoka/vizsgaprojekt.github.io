@@ -52,7 +52,14 @@
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
-
+        <div class="block mt-4">
+            <label for="gdpr" class="inline-flex items-center">
+                <input id="gdpr" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="gdpr">
+                <span class="ms-2 text-sm text-gray-600">Elolvastam, és elfogadom a <b>Wesoc Adatvédelmi Szabályzatot</b>.</span>
+              
+            </label>
+            <x-input-error :messages="$errors->get('gdpr')" class="mt-2" />
+        </div>
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                 {{ __('Már regisztráltál?') }}

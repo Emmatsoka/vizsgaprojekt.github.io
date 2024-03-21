@@ -42,7 +42,12 @@
               <li class="nav-item">
                   <a class="nav-link" href="{{ url('elerhetoseg') }}"><img src="pics/email.png" height="auto" width="20px" class="nav-link-icon">Elérhetőség</a>
                 </li>
+                @if (Auth::user())
+                <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Megnyitás</a>
+                @else 
                 <a class=" gomb feherhtr float-right bold" href="{{ url('login') }}">Belépek</a>
+                @endif
+            
             </ul>
        
           
@@ -76,7 +81,7 @@
                 <div class="col-lg-4 attunes jobbra">
                 <h1 >Mit várhatsz a weboldalunktól?</h1>
                   <p>
-                    A weboldaltól azt várhatod hogy egy biztonságos közegben lehetsz egy jól működő,letisztult szociális oldalon.Az egyszerűség és a funkcionalitás ötvözése révén a felhasználókat könnyedén elvezethetjük a kívánt célok eléréséhez.
+                    A weboldaltól azt várhatod hogy egy biztonságos közegben lehetsz egy jól működő, letisztult szociális oldalon. Az egyszerűség és a funkcionalitás ötvözése révén a felhasználókat könnyedén elvezethetjük a kívánt célok eléréséhez.
                   </p>
                 </div>
                 <div class="col-lg-4 text-center jobbattunes ">

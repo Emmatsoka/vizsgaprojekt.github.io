@@ -10,9 +10,9 @@
         <h1>Bejelentkezés</h1>
         <!-- Email Address -->
         <div>
-            <label for="email">EMAIL</label><br>
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <label for="email_or_username">EMAIL/FELHASZNÁLÓNÉV</label><br>
+            <x-text-input id="email" class="block mt-1 w-full" type="text" name="email_or_username" :value="old('email_or_username')" required autofocus />
+            <x-input-error :messages="$errors->get('email_or_username')" class="mt-2" />
         </div>
 
         <!-- Password -->

@@ -1,9 +1,68 @@
 <x-app-layout>
-    <div class="text-white">
-<h1 class="text-white">Összes felhasználó profilja</h1>
+    <div id="profilok">
+        @if ($query == '')
+        <h1 class="text-center">#ÖSSZES FELHASZNÁLÓ</h1>
+        @else
+        <h1 class="text-center">#KERESÉSI EREDMÉNYEK: "{{ $query }}"</h1>
+        @endif
+        @if($users->isEmpty())
+            <div class="text-center" role="alert">
+                Nincs találat.
+            </div>
+        @endif
 
-@foreach ($users as $user)
-    <p><b>Név:</b> {{ $user->name }}</p>
-@endforeach
-</div>
+        <div class="row justify-content-center">
+            @foreach ($users as $user)
+                <div class="col-lg-5">
+                    <div class="card">
+                        <a href="{{ route('profil', ['username' => $user->username]) }}">
+                            <img src="{{ URL::asset('user/'.$user->profilkep) }}" height="auto" width="80px">
+                            {{ $user->name }}
+                            @if ($user->admin)
+                                <span id="adminisztrator"> Adminisztrátor </span>
+                            @endif
+                            @if (Auth::user()->username == $user->username)
+                                <span id="sajatfiok">(Saját fiók)</span>
+                            @endif
+                        </a>
+                        @if (Auth::user()->username != $user->username)
+                        <form action="{{ route('barat.jeloles', ['barat_id' => $user->id]) }}" method="POST">
+                                @csrf
+                                <button type="submit" id="profilgomb" class="feketehtr gomb">Jelölés</button>
+                            </form>
+                        @endif
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        @if(!($users->isEmpty()))
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <ul class="custom-pagination">
+                    @if ($users->onFirstPage())
+                    <li class="disabled"><span>← Előző</span></li>
+                @else
+                    <li><a href="{{ $users->appends(request()->input())->previousPageUrl() }}">← Előző</a></li>
+                @endif
+                    <!-- Számok a lapokhoz -->
+                    @for ($i = 1; $i <= $users->lastPage(); $i++)
+                        @if ($i == $users->currentPage())
+                            <li class="aktivoldal"><span>{{ $i }}</span></li>
+                        @else
+                            <li><a href="{{ $users->url($i) }}">{{ $i }}</a></li>
+                        @endif
+                    @endfor
+                    
+                    <!-- Következő gomb -->
+                    @if ($users->hasMorePages())
+                    <li><a href="{{ $users->appends(request()->input())->nextPageUrl() }}">Következő →</a></li>
+                @else
+                    <li class="disabled"><span>Következő</span></li>
+                @endif
+                </ul>
+            
+            </div>
+        </div>
+        @endif
+    </div>
 </x-app-layout>
