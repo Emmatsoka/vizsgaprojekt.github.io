@@ -36,7 +36,17 @@ public function jeloles(Request $request, $barat_id)
 
     return redirect()->back()->with('success', 'Sikeresen jelölted barátnak ' . $barat->name . '-t!');
 }
- 
+public function search(Request $request)
+{
+    $query = $request->input('query');
+    
+    // Keresés a felhasználók között név vagy felhasználónév alapján
+    $users = User::where('name', 'like', "%$query%")
+    ->orWhere('username', 'like', "%$query%")
+    ->paginate(10);
+    return view('profilok', compact('users', 'query'));
+
+}
     public function edit(Request $request): View
     {
         return view('profile.edit', [

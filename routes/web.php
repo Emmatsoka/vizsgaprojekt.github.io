@@ -41,7 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile/profilkep', [ProfileController::class, 'profilkep'])->name('profile.profilkep');
     Route::post('/barat/jeloles/{barat_id}', [ProfileController::class, 'jeloles'])->name('barat.jeloles');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
+    Route::get('/kereses', [ProfileController::class, 'search'])->name('search');
     Route::get('/baratok/{username}', [ProfileController::class, 'baratok'])->name('baratok');
 });
 
