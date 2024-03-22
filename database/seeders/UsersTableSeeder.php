@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
     {
         $faker = Faker::create('hu_HU');
 
-        foreach (range(1, 3) as $index) {
+        foreach (range(1, 20) as $index) {
             // Generálj egyedi fájlnevet a képnek
             $profilkepFileName = 'profilkep_' . $index . '.jpg';
             $boritokepFileName = 'boritokep_' . $index . '.jpg';
