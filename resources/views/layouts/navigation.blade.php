@@ -17,39 +17,34 @@
             </ul>
 
             <ul class="navbar-nav">
-                <li class="nav-item">
-                <div class="dropdown  ">
+                <li class="nav-item "> 
+               <div class="dropdown  ">
                     <a class=" drpdwn " href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" height="auto" width="35px">
+                        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" class="attunes" height="auto" width="35px">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ route('profil', ['username' => Auth::user()->username]) }}">{{ __('Profilom') }}</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil', ['username' => Auth::user()->username]) }}"><img src="{{asset('pics/user.png')}}" class="invertalt" height="auto" width="25px">{{ __('Profilom') }}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ route('baratok', ['username' => Auth::user()->username]) }}">{{ __('Barátaim') }}</a></li>
+                        <li><a class="dropdown-item" href="{{ route('baratok', ['username' => Auth::user()->username]) }}"><img src="{{asset('pics/friends.png')}}" class="invertalt" height="auto" width="25px">{{ __('Barátaim') }}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profil szerkesztése') }}</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profile.edit') }}"><img src="{{asset('pics/editprofile.png')}}" class="invertalt" height="auto" width="25px">{{ __('Profil szerkesztése') }}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-                                <button type="submit" class="dropdown-item">{{ __('Kijelentkezés') }}</button>
-                            </form>
-                        </li>
+                 
                     </ul>
                 </div>
             </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                      
-                       <div class="dropdown navgomb">
+                       <div class="dropdown navgomb ">
                         <a class=" drpdwn " href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{asset('pics/options.png')}}" class="icon invertalt" height="auto" width="20px">
+                            <img src="{{asset('pics/options.png')}}" class="icon invertalt attunes" height="auto" width="20px">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('profile.vedelem') }}">Védelem</a></li>
+                            <li><a class="dropdown-item" href="{{ route('profile.vedelem') }}"><img src="{{asset('pics/shield.png')}}" class="invertalt" height="auto" width="25px">Védelem</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Beállítások</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="{{asset('pics/optionsdrp.png')}}" class="invertalt" height="auto" width="25px">Beállítások</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Téma</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="{{asset('pics/theme.png')}}" class="invertalt" height="auto" width="25px">Téma</a></li>
                         </ul>
                     </div>
                 </li>
@@ -59,7 +54,7 @@
               <li class="nav-item navgomb ">
                 <a class="">        <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button type="submit" class="dropdown-item"><img src="{{asset('pics/logout.png')}}" height="auto"  class="icon "  width="20px"> </button>
+                    <button type="submit" class="dropdown-item"><img src="{{asset('pics/logout.png')}}" height="auto"  class="icon attunes"  width="20px"> </button>
                 </form></a>
             </li>
             </ul>
