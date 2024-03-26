@@ -1,40 +1,12 @@
 
-
-:root-w{
-    --oldalhatter: #f2f2f2;
-    --widgethatter: #ffffff;
-    --betuszin: black;
-    --designh5:#132129;
-    --profilkepborder: var(--widgethatter) !important;
-    --wesocnavkep: invert(100%);
-
-
-    --shadow:rgba(0, 0, 0, 0.13);
-    --feketehtrbg: #222c31;
-    --feketehtrclr: #ffffff;
-    --feketehtrbghover: rgb(216, 216, 216);
-    --feherhtrbg: #ffffff;
-    --feherhtrclr: black;
-    --feherhtrbghover: rgb(54, 54, 54);
-
-    
-    --hoverbg: #a8a8a8;
-    --bordercolor: gray;
-    --htrszin:#fffffff5;
-    
-    --designtitle:#dfdfdf;
-    --designsection: #eeeeee;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    --navgomb: #e0e0e0;
-}
-
-:root{
+.alap-tema{
     --oldalhatter: #0d181e;
     --widgethatter: #132129;
     --betuszin: white;
     --designh5:#add5ec;
     --profilkepborder: var(--widgethatter) !important;
     --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
 
     --shadow:rgba(0, 0, 0, 0.274);
     --feketehtrbg: #ffffff;
@@ -53,16 +25,47 @@
     --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #192c36;
+    --navgombhover:#1f3441;
+}
+
+.feher-tema{
+    --oldalhatter: #f2f2f2;
+    --widgethatter: #ffffff;
+    --betuszin: black;
+    --designh5:#132129;
+    --profilkepborder: var(--widgethatter) !important;
+    --wesocnavkep: invert(100%);
+    --invertalt2: invert(0%);
+
+    --shadow:rgba(0, 0, 0, 0.13);
+    --feketehtrbg: #222c31;
+    --feketehtrclr: #f5f5f5;
+    --feketehtrbghover: rgb(216, 216, 216);
+    --feherhtrbg: #f3f3f3;
+    --feherhtrclr: black;
+    --feherhtrbghover: rgb(54, 54, 54);
+
+    
+    --hoverbg: #eeeeee;
+    --bordercolor: gray;
+    --htrszin:#fffffff5;
+    
+    --designtitle:#dfdfdf;
+    --designsection: #eeeeee;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navgomb: #f2f2f2;
+    --navgombhover:rgb(216, 216, 216);
 }
 
 
-:root-r{
+.piros-tema{
     --oldalhatter: #1e0d0d;
     --widgethatter: #291313;
     --betuszin: white;
-    --designh5:#add5ec;
+    --designh5:#ecadad;
     --profilkepborder: var(--widgethatter) !important;
     --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
 
     --shadow:rgba(0, 0, 0, 0.274);
     --feketehtrbg: #ffffff;
@@ -72,7 +75,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #411f1f;
 
-    --hoverbg: rgb(65, 31, 31);
+    --hoverbg: #411f1f;
     --bordercolor: #582f2f;
     --htrszin:#1e0d0dd2;
 
@@ -80,8 +83,96 @@
     --designsection: #301616;
     --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
+    --navgomb: #361919;
+    --navgombhover: #411f1f;
 }
 
+.zold-tema{
+    --oldalhatter: #0e1e0d;
+    --widgethatter: #132917;
+    --betuszin: white;
+    --designh5:#b7ecad;
+    --profilkepborder: var(--widgethatter) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+
+    --shadow:rgba(0, 0, 0, 0.274);
+    --feketehtrbg: #ffffff;
+    --feketehtrclr: black;
+    --feketehtrbghover: #1f4124;
+    --feherhtrbg: #193619;
+    --feherhtrclr: #ffffff;
+    --feherhtrbghover: #1f4121;
+
+    --hoverbg: #23411f;
+    --bordercolor: #244926;
+    --htrszin:#0f1e0dd2;
+
+    --designtitle:#1c3b1c;
+    --designsection: #163016;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: #19361b;
+    --navgombhover: #1f4121;
+}
+
+.sarga-tema{
+    --oldalhatter: #1e1d0d;
+    --widgethatter: #292613;
+    --betuszin: white;
+    --designh5:#ece6ad;
+    --profilkepborder: var(--widgethatter) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+
+    --shadow:rgba(0, 0, 0, 0.274);
+    --feketehtrbg: #ffffff;
+    --feketehtrclr: black;
+    --feketehtrbghover: #413f1f;
+    --feherhtrbg: #363619;
+    --feherhtrclr: #ffffff;
+    --feherhtrbghover: #413f1f;
+
+    --hoverbg: #41401f;
+    --bordercolor: #58542f;
+    --htrszin:#1e1c0dd2;
+
+    --designtitle:#3b3a1c;
+    --designsection: #302d16;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: #363319;
+    --navgombhover: #413e1f;
+}
+
+.lila-tema{
+    --oldalhatter: #140d1e;
+    --widgethatter: #1b1329;
+    --betuszin: white;
+    --designh5:#ece6ad;
+    --profilkepborder: var(--widgethatter) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+
+    --shadow:rgba(0, 0, 0, 0.274);
+    --feketehtrbg: #ffffff;
+    --feketehtrclr: black;
+    --feketehtrbghover: #2f1f41;
+    --feherhtrbg: #231936;
+    --feherhtrclr: #ffffff;
+    --feherhtrbghover: #2c1f41;
+
+    --hoverbg: #291f41;
+    --bordercolor: #3d2f58;
+    --htrszin:#140d1ed2;
+
+    --designtitle:#281c3b;
+    --designsection: #1b1630;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: #211936;
+    --navgombhover: #281f41;
+}
 
 
 
@@ -204,12 +295,12 @@ nav .navbar-brand img{
     transition: 0.4s all !important;
 }
 .keresogomb:hover{
-    background: #1f3441 !important;
+    background: var(--navgombhover) !important;
     color: white !important;
     transition: 0.4s all !important;
 }
 .keresogomb{ 
-    background: #192c36 !important;
+    background: var(--navgomb) !important;
     color: var(--feketehtrclr) !important;
     transition: 0.4s all !important;
 }
@@ -304,14 +395,17 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 }
 .attunes{
     transition: 0.3s !important;
+    
 }
-
+.attunes:hover{
+    opacity: 70% !important ;
+}
 .navgomb img{
     transition: 0.3s !important;
     vertical-align: middle !important;
 }
 .navgomb{
-   
+        
         border-radius: 30px !important;
         padding: 8px  !important;
         text-decoration: none !important;
@@ -331,8 +425,9 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 .drpdwn img{
     border-radius: 100% !important;
 }
-.drpdwn img{
+.profil img{
     margin-inline-end: 0px !important;
+    margin-right: 10px !important;
 }
 .drpdwn:hover{
 
@@ -462,6 +557,15 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 .profilszerkesztes #boritokep{
     border-radius: 20px !important;
 }
+ #tema input[type=radio]{
+    outline: none;
+    border: none;
+    display:none;
+}
+#tema input[type=radio]:checked{
+    outline: none;
+    border: none;
+}
 #profilgombdiv{
     text-align: center !important;
     margin: 15px !important;
@@ -481,7 +585,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
         margin-right: 20px !important;
     }
     #profilok #profilgomb{
-        margin-top: -70px !important   ;
+        margin-top: -0px !important   ;
     }
 }
 
@@ -616,6 +720,12 @@ footer .list-inline{
 .invertalt{
     filter: var(--wesocnavkep) ;
 }
+.invertalt2{
+    filter: var(--invertalt2) ;
+}
+.invertalt2:hover{
+    filter: var(--wesocnavkep);
+}
 
 /*------------------ profilok.blade.php  --------------------- */
 
@@ -623,6 +733,7 @@ footer .list-inline{
     margin: 15px !important;
     border-radius: 20px !important;
     padding:10px !important;
+    
 }
 #profilok .card a{
     max-width: fit-content !important;
@@ -630,6 +741,8 @@ footer .list-inline{
     color: var(--betuszin) !important;
     font-weight: bold !important;
     display: block !important;
+    vertical-align: middle;
+    
 }
 #profilok .card img{
     border-radius: 100%;
@@ -638,16 +751,21 @@ footer .list-inline{
 #profilok .row{
     margin-left: 0px !important;
     margin-right: 0px !important;
+    
 }
 #profilok h1{
     margin:25px !important;
     margin-top: 30px !important;
 }
-#profilok #sajatfiok, #profilok #adminisztrator{
+.szurke{
     color: rgb(207, 207, 207);
-    display: inline !important;
+   
     font-weight: normal !important;
 }
+#profilok .card .col form{
+    padding-top: 30px !important;
+}
+
 .custom-pagination {
     display: flex;
     justify-content: center;
@@ -692,7 +810,7 @@ footer .list-inline{
 #baloldalisav ul li a{
     transition: 0.3s all;
     color: var(--betuszin) !important;
-      background-color:  #192c36 !important;
+      background-color:  var(--navgomb) !important;
     width: 100% !important;
     margin-bottom: 10px !important;
     margin-top: 10px !important;
@@ -706,7 +824,7 @@ footer .list-inline{
     border-radius: 100% !important;
 }
 #baloldalisav ul li a:hover{
-    background-color:  #1f3441 !important;
+    background-color:  var(--navgombhover) !important;
     transition: 0.3s all;
 }
 #baloldalisav ul li {
@@ -714,4 +832,45 @@ footer .list-inline{
 }
 #baloldalisav ul{
     padding-left: 0px !important;
+}
+
+.tema-gomb {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 10px !important;
+    margin: 5px !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    color: #fff !important;
+    transition: 0.3s all;
+}
+.tema-gomb:hover{
+    filter: brightness(150%);
+    transition: 0.3s all;
+}
+#alapTema {
+    background-color: #1c303b !important;
+
+}
+
+#feherTema {
+    background-color: #dfdfdf !important;
+    color: black !important;
+}
+
+#pirosTema {
+    background-color: #3b1c1c !important;
+}
+
+#sargaTema {
+    background-color: #3b3a1c !important;
+}
+
+#lilaTema {
+    background-color: #281c3b !important;
+}
+
+#zoldTema {
+    background-color: #1c3b1c !important;
 }

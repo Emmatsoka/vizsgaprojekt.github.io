@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ asset('styles/app-main.css') }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
     </head>
-    <body class="">
+    <body class="{{ $user->tema }}">
         <div id="htrszin"></div>
         <div class="">
             @include('layouts.navigation')

@@ -47,8 +47,5 @@ class User extends Authenticatable
     ];
 
 
-    public function baratok()
-    {
-        return $this->belongsToMany(User::class, 'baratok', 'user_id', 'barat_id');
-    }
+   
 }

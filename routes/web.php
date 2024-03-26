@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BaratController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,14 +40,17 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/vedelem', [ProfileController::class, 'vedelem'])->name('profile.vedelem');
     Route::patch('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::patch('/profile/profilkep', [ProfileController::class, 'profilkep'])->name('profile.profilkep');
-    Route::post('/barat/jeloles/{barat_id}', [ProfileController::class, 'jeloles'])->name('barat.jeloles');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/kereses', [ProfileController::class, 'search'])->name('search');
     Route::get('/baratok/{username}', [ProfileController::class, 'baratok'])->name('baratok');
+    Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
+    Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
+    Route::post('/tema', [ProfileController::class, 'tema'])->name('tema');
+    Route::get('/tema', function () {
+        return view('profile.tema');
+    });
 });
 
 require __DIR__.'/auth.php';
 
-Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
-Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
 

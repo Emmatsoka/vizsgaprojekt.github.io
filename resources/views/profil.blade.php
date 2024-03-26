@@ -27,12 +27,7 @@
                         </div>
                         @endif
                         @if (Auth::user()->username != $user->username)
-                        <div class="text-right ml-auto" id="profilgombdiv">
-                            <form action="{{ route('barat.jeloles', ['barat_id' => $user->id]) }}" method="POST">
-                                @csrf
-                            <button type="submit" id="profilgomb"    class="gomb feketehtr">{{ __('Jelölés') }}</button>
-                            </form>
-                    </div>
+                        
                         @endif
               
                 </div>
