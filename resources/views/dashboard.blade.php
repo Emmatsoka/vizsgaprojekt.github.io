@@ -19,12 +19,12 @@
 
                     
                 <!-- Bejegyzés létrehozása űrlap -->
-                @include('bejegyzes-letrehozas')
+      
 
                     <!-- Teszt tartalmak -->
-                    @for ($i = 1; $i <= 5; $i++)
+                    
                     @include('bejegyzes')
-                    @endfor
+                    
                 </div>
 
             </div>

@@ -24,22 +24,13 @@ class UsersTableSeeder extends Seeder
             $profilkepFileName = 'profilkep_' . $index . '.jpg';
             $boritokepFileName = 'boritokep_' . $index . '.jpg';
 
-            // Letöltés és mentés a profilkép fájl
-            $profilkepUrl = 'https://loremflickr.com/200/200';
-            $profilkepContent = file_get_contents($profilkepUrl);
-            File::put(public_path('user/' . $profilkepFileName), $profilkepContent);
-
-            // Letöltés és mentés a borítókép fájl
-            $boritokepUrl = 'https://picsum.photos/1920/800';
-            $boritokepContent = file_get_contents($boritokepUrl);
-            File::put(public_path('user/' . $boritokepFileName), $boritokepContent);
-
+        
             // Felhasználó létrehozása a generált képekkel
             User::create([
                 'name' => $faker->name,
                 'username' => $faker->unique()->userName,
-                'profilkep' =>  $profilkepFileName,
-                'boritokep' =>  $boritokepFileName,
+                'profilkep' =>  public_path('pics/felhasznalo.png'),
+                'boritokep' =>  public_path('pics/boritokep.png'),
                 'email' => $faker->unique()->safeEmail,
                 'email_verified_at' => now(),
                 'password' => bcrypt('password'),

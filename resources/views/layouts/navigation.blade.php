@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-        <a class="navbar-brand icon" href="{{ route('dashboard') }}"><img src="{{asset('Wesoc_logo_white_png.png')}}" height="auto" width="100px"></a>
+        <a class="navbar-brand icon" href="{{ url('dashboard') }}"><img src="{{asset('Wesoc_logo_white_png.png')}}" height="auto" width="100px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

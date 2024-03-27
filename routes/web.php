@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BaratController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,12 @@ Route::get('/adatvedelem', function () {
 Route::get('/projekt', function () {
     return view('oldalak.projekt');
 });
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -46,6 +50,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
     Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
     Route::post('/tema', [ProfileController::class, 'tema'])->name('tema');
+
+    Route::get('/bejegyzes', [PostController::class, 'create']);
+    Route::get('/dashboard', [PostController::class, 'index']);
+    Route::post('/bejegyzes', [PostController::class, 'store'])->name('store');
+
     Route::get('/tema', function () {
         return view('profile.tema');
     });
