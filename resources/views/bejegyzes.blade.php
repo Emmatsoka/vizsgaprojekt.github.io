@@ -25,7 +25,7 @@
             <!-- Fájlfeltöltés ikon -->
             <div class="col">
                 <label for="fileUpload" class="upload-icon invertalt">
-                    <img src="{{ asset('pics/fileicon.png') }}" alt="File Upload" width="30">
+                    <img src="{{ asset('pics/imageicon.png') }}" alt="File Upload" width="30">
                     <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx" name="filetoupload" style="display: none;">
                 </label>
             </div>
@@ -41,19 +41,19 @@
 </div>
 
 @foreach($data as $post)
-<div class="card  mb-4 p-2 mt-4" id="bejegyzes">
+<div class="card  p-2 " id="bejegyzes">
     <div class="card-header syne-bold">
         <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" alt="" style="border-radius:100%; margin-right:10px;" height="35px" width="auto">  <a href="{{$post -> name}}" style="text-decoration: none; color: var(--betuszin);">{{ Auth::user()->name}}</a> 
     </div>
-    <div class="card-body">
-        <h5>{{$post -> title}}</h5>
-            <img src="{{ asset('user/'.$post -> imagepath) }}" alt="{{ asset('user/'.$post -> imagepath) }}" width="300px" height="200px" class="img-fluid">
-        </div>
-        <div>
-            <p>{{ $post -> context }}</p>
+  
+        <h5 class="bejegyzescim">{{$post -> title}}</h5>
+            <img src="{{ asset('user/'.$post -> imagepath) }}" alt="{{ asset('user/'.$post -> imagepath) }}" width="90%" class="img-fluid bejegyzeskep">
+       
+        <div class="bejegyzesalso">
+            <p >{{ $post -> context }}</p>
             <span>Posztolva: {{$post -> updated_at}}</span>
             <span>Postolta: {{$post -> name}}</span>
         </div>
     </div>
-</div>
+
 @endforeach

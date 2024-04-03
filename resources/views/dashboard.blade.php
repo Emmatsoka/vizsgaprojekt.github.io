@@ -26,14 +26,14 @@
                     @include('bejegyzes')
                     
                 </div>
-
-            </div>
+</div>
+         
         
             <!-- Jobb oldali sáv -->
             <div class="col-md-3    " >
                 <div class=" ps-2 pe-2 mb-4 " >
           
-                <div class="p-3 flex-grow-1" id="jobboldalisav">
+                <div class="p-3 " id="jobboldalisav">
                     @include('layouts.jobb-nav')
                 </div>
                 
