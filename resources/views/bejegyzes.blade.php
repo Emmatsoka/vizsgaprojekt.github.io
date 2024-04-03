@@ -2,6 +2,7 @@
     <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="name" value="{{ Auth::user()->name }}">
+        <input type="hidden" name="username" value="{{ Auth::user()->username }}">
         <div class="mb-3 row align-items-center">
             <!-- Profilkép megjelenítése -->
             <div class="col-auto me-3">
@@ -26,7 +27,7 @@
             <div class="col">
                 <label for="fileUpload" class="upload-icon invertalt">
                     <img src="{{ asset('pics/imageicon.png') }}" alt="File Upload" width="30">
-                    <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx" name="filetoupload" style="display: none;">
+                    <input type="file" id="fileUpload" accept="image" name="filetoupload" style="display: none;">
                 </label>
             </div>
            
@@ -41,19 +42,23 @@
 </div>
 
 @foreach($data as $post)
-<div class="card  p-2 " id="bejegyzes">
-    <div class="card-header syne-bold">
-        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" alt="" style="border-radius:100%; margin-right:10px;" height="35px" width="auto">  <a href="{{$post -> name}}" style="text-decoration: none; color: var(--betuszin);">{{ Auth::user()->name}}</a> 
+<div class="card p-2" id="bejegyzes">
+    <div class="card-header ">
+        <img src="{{ URL::asset('user/'.$post->name.'/'.$post->profilkep) }}" alt="" style="border-radius:100%; margin-right:10px;" height="35px" width="auto">  <a href="profil/{{$post -> username}}" style="text-decoration: none; color: var(--betuszin);" class="syne-bold">{{$post -> name}}</a>      <span class="bejegyzespostolva">Posztolva: {{$post -> updated_at}}</span>
+
     </div>
-  
-        <h5 class="bejegyzescim">{{$post -> title}}</h5>
-            <img src="{{ asset('user/'.$post -> imagepath) }}" alt="{{ asset('user/'.$post -> imagepath) }}" width="90%" class="img-fluid bejegyzeskep">
-       
-        <div class="bejegyzesalso">
-            <p >{{ $post -> context }}</p>
-            <span>Posztolva: {{$post -> updated_at}}</span>
-            <span>Postolta: {{$post -> name}}</span>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset('user/'.$post -> imagepath) }}" alt="{{ asset('user/'.$post -> imagepath) }}" class="img-fluid bejegyzeskep">
+        </div>
+        <div class="col-md-6">
+            <div class="bejegyzesjobboldal">
+                <h5 class="bejegyzescim">{{$post -> title}}</h5>
+                <p>{{ $post -> context }}</p>
+               
+            </div>
         </div>
     </div>
-
+  
+</div>
 @endforeach

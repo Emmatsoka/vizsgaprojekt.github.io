@@ -9,7 +9,7 @@ class CreatePostsTable extends Migration
     /**
      * Run the migrations.
      *
-     * @return void
+     * 
      */
     public function up()
     {
@@ -17,18 +17,19 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string("name");
+            $table->string("username");
             $table->string("title");
             $table->longtext("context");
             $table->string("imagepath")->nullable();
 
-            //$table->string('name');
+       
         });
     }
 
     /**
      * Reverse the migrations.
      *
-     * @return void
+     * 
      */
     public function down()
     {

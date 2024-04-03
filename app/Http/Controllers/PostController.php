@@ -46,6 +46,7 @@ class PostController extends Controller
         $datas->title = $request -> titletoupload;
         $datas->context = $request -> contexttoupload;
         $datas->name = $request -> name;
+        $datas->username = $request -> username;
         /*
         $validated = $request->validate([
             'title' => 'required|max:255',

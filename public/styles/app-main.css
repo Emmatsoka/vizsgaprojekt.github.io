@@ -429,9 +429,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     margin-inline-end: 0px !important;
     margin-right: 10px !important;
 }
-.drpdwn:hover{
 
-}
 #jobboldalisav, #baloldalisav{
     background-color: var(--widgethatter) !important;
     border-radius: 20px !important;
@@ -451,18 +449,28 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 #bejegyzesletrehozas #postContent::placeholder, #bejegyzesletrehozas #postTitle::placeholder{
     color: var(--betuszin) !important;
 }
+.bejegyzespostolva{
+    font-family: syne-regular !important;
+    font-weight: normal !important;
+    float: right !important;
+    color: gray !important;
+}
 .bejegyzesalso{
     margin: 20px !important;
 }
 .bejegyzescim{
-    margin-left: 50px !important;
+  
     margin-top: 20px !important;
+    text-align: center;
 }
 .bejegyzeskep{
     border-radius: 10px !important;
     margin: 0 auto !important;
     margin-top: 20px !important;
-    margin-bottom: 20px !important;
+  
+}
+#bejegyzes{
+    padding: 20px !important;
 }
 .drop-container {
     position: relative;
