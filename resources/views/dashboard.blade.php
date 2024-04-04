@@ -22,8 +22,8 @@
       
 
                     <!-- Teszt tartalmak -->
-                    
-                    @include('bejegyzes')
+                    @include('bejegyzes-letrehozas')
+                    @include('bejegyzesek')
                     
                 </div>
 </div>

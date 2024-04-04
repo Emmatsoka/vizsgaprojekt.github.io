@@ -1,5 +1,5 @@
 
-.alap-tema{
+.sotetkek-tema{
     --oldalhatter: #0d181e;
     --widgethatter: #132129;
     --betuszin: white;
@@ -22,15 +22,41 @@
 
     --designtitle:#1c303b;
     --designsection: #162730;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #192c36;
     --navgombhover:#1f3441;
 }
+.alap-tema{
+    --oldalhatter: rgb(13, 24, 30);
+    --widgethatter: rgba(19, 33, 41, 0.5);
+    --profilkepborder: rgba(19, 33, 41, 0.5) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+    --betuszin: white;
+    --shadow: rgba(0, 0, 0, 0.274);
+    --feketehtrbg: rgba(255, 255, 255, 0.699);
+    --feketehtrclr: rgb(0, 0, 0);
+    --feketehtrbghover: rgba(31, 52, 65, 0.5);
+    --feherhtrbg: rgba(25, 44, 54, 0.5);
+    --feherhtrclr: white;
+    --feherhtrbghover: rgba(31, 52, 65, 0.5);
+
+    --hoverbg: rgba(31, 52, 65, 0.5);
+    --bordercolor: rgba(47, 73, 88, 0.5);
+    --htrszin: rgba(13, 24, 30, 0.548);
+
+    --designtitle: #1c303b; /* A betűszín nem változik, a háttere átlátszó */
+    --designsection: rgba(22, 39, 48, 0.5);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: rgba(25, 44, 54, 0.5);
+    --navgombhover: rgba(31, 52, 65, 0.5);
+}
 
 .feher-tema{
     --oldalhatter: #f2f2f2;
-    --widgethatter: #ffffff;
+    --widgethatter: #ffffff93;
     --betuszin: black;
     --designh5:#132129;
     --profilkepborder: var(--widgethatter) !important;
@@ -41,26 +67,26 @@
     --feketehtrbg: #222c31;
     --feketehtrclr: #f5f5f5;
     --feketehtrbghover: rgb(216, 216, 216);
-    --feherhtrbg: #f3f3f3;
+    --feherhtrbg: #f3f3f3d2;
     --feherhtrclr: black;
     --feherhtrbghover: rgb(54, 54, 54);
 
-    
-    --hoverbg: #eeeeee;
-    --bordercolor: gray;
-    --htrszin:#fffffff5;
-    
-    --designtitle:#dfdfdf;
-    --designsection: #eeeeee;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    --navgomb: #f2f2f2;
-    --navgombhover:rgb(216, 216, 216);
+
+    --hoverbg: #eeeeeeab;
+    --bordercolor: rgba(128, 128, 128, 0.521);
+    --htrszin:#ffffffaf;
+
+    --designtitle:#dfdfdfdc;
+    --designsection: #eeeeeebe;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(1, 1, 1, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navgomb: #f2f2f288;
+    --navgombhover:rgba(216, 216, 216, 0.459);
 }
 
 
 .piros-tema{
-    --oldalhatter: #1e0d0d;
-    --widgethatter: #291313;
+    --oldalhatter: #1e0d0ddc;
+    --widgethatter: #2913136b;
     --betuszin: white;
     --designh5:#ecadad;
     --profilkepborder: var(--widgethatter) !important;
@@ -70,21 +96,21 @@
     --shadow:rgba(0, 0, 0, 0.274);
     --feketehtrbg: #ffffff;
     --feketehtrclr: black;
-    --feketehtrbghover: #411f1f;
-    --feherhtrbg: #361919;
+    --feketehtrbghover: #411f1fc2;
+    --feherhtrbg: #361919d2;
     --feherhtrclr: #ffffff;
-    --feherhtrbghover: #411f1f;
+    --feherhtrbghover: #411f1fd2;
 
     --hoverbg: #411f1f;
     --bordercolor: #582f2f;
     --htrszin:#1e0d0dd2;
 
-    --designtitle:#3b1c1c;
-    --designsection: #301616;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --designtitle:rgba(59, 28, 28, 0.699);
+    --designsection: #301616be;
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-    --navgomb: #361919;
-    --navgombhover: #411f1f;
+    --navgomb: var(--feherhtrbg);
+    --navgombhover: var(--feherhtrbghover);
 }
 
 .zold-tema{
@@ -110,7 +136,7 @@
 
     --designtitle:#1c3b1c;
     --designsection: #163016;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #19361b;
     --navgombhover: #1f4121;
@@ -139,7 +165,7 @@
 
     --designtitle:#3b3a1c;
     --designsection: #302d16;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #363319;
     --navgombhover: #413e1f;
@@ -168,7 +194,7 @@
 
     --designtitle:#281c3b;
     --designsection: #1b1630;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #211936;
     --navgombhover: #281f41;
@@ -197,19 +223,21 @@
 .syne-extra{
     font-family: syne-extra !important;
 }
-
-body {
+.oldal{
     animation: attunesanimacio ease 1.30s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+body {
+
 }
 
 @keyframes attunesanimacio {
     0% {
         opacity: 0;
-        
+
     }
-  
+
     100% {
         opacity: 1;
     }
@@ -217,13 +245,13 @@ body {
 body{
     background-size: cover;
     background-repeat: no-repeat;
- /*   background-image: url(../pics/htr2.jpg); */
+    background-color: var(--oldalhatter) !important;
     background-image: url(../pics/htr2_blr.png) !important;
     background-attachment: fixed ;
-    
+
     font-family: syne-regular !important;
     color: var(--betuszin) !important ;
-   
+
 }
 #dashboard{
     color:  var(--betuszin) !important;
@@ -250,13 +278,14 @@ nav{
     top: 15px;
     background-color: var(--widgethatter) !important;
     padding: 18px !important ;
+    backdrop-filter: blur(20px) !important;
 }
 nav::after{
     margin: 0px !important;
     border-radius: 0px !important;
 }
 nav .navbar-brand img{
-    filter:var(--wesocnavkep) !important; 
+    filter:var(--wesocnavkep) !important;
 }
 .navbar-toggler{
     color: var(--betuszin) !important;
@@ -269,11 +298,11 @@ nav .navbar-brand img{
         width: 24vw !important;
     }
    .nav-item{
-    margin:0px 10px 0px !important; 
+    margin:0px 10px 0px !important;
    }
 }
 @media only screen and (max-width: 992px) {
- 
+
     .navbar-nav{
         margin: 0 auto !important;
     }
@@ -284,7 +313,8 @@ nav .navbar-brand img{
     text-decoration: none !important;
     border: none !important;
     width:fit-content;
-    font-weight: 600 !important ;
+
+
 }
 .gomb a{
     text-decoration: none !important;
@@ -299,7 +329,7 @@ nav .navbar-brand img{
     color: white !important;
     transition: 0.4s all !important;
 }
-.keresogomb{ 
+.keresogomb{
     background: var(--navgomb) !important;
     color: var(--feketehtrclr) !important;
     transition: 0.4s all !important;
@@ -318,7 +348,27 @@ nav .navbar-brand img{
     color: var(--feketehtrclr) !important;
     transition: 0.4s all !important;
 }
+.piroshtr{
+    background: rgb(223, 46, 46) !important;
+    color: var(--feketehtrclr) !important;
+    transition: 0.4s all !important;
+}
 
+.piroshtr:hover{
+    background: rgb(199, 38, 38) !important;
+    color:  var(--betuszin) !important;
+    transition: 0.4s all !important;
+}
+.kekhtr{
+    background: rgb(43, 132, 214) !important;
+    color: var(--feketehtrclr) !important;
+    transition: 0.4s all !important;
+}
+.kekhtr:hover{
+    background: rgb(38, 132, 196) !important;
+    color:  var(--betuszin) !important;
+    transition: 0.4s all !important;
+}
 .feketehtr:hover{
     background: var(--feketehtrbghover) !important;
     color:  var(--betuszin) !important;
@@ -327,8 +377,9 @@ nav .navbar-brand img{
 #bejegyzesletrehozas{
     background-color: var(--widgethatter) !important;
     border-radius: 20px !important;
-    overflow: auto
-    
+    overflow: auto;
+    padding-bottom: 0px !important;
+
 }
 #bejegyzesletrehozas #itemek{
     float: left !important;
@@ -339,17 +390,20 @@ nav .navbar-brand img{
 }
 #bejegyzesletrehozas button[type="submit"]{
     float:right !important;
-  
+
 }
 
 #bejegyzesletrehozas textarea, nav input, #bejegyzesletrehozas input{
-    background-color: var(--widgethatter);
-    padding-left: 10px !important;
+    background-color: transparent !important;
+    padding: 10px !important;
+    padding-left: 15px !important;
     border: 1px solid var(--bordercolor);
     border-radius: 20px !important ;
     color: var(--betuszin) !important;
 }
-
+.bejegyzesletrehozasgombok{
+    margin-bottom: 0px !important;
+}
 #bejegyzes .card-header{
     border-radius: 15px !important;
 }
@@ -395,7 +449,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 }
 .attunes{
     transition: 0.3s !important;
-    
+
 }
 .attunes:hover{
     opacity: 70% !important ;
@@ -405,7 +459,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     vertical-align: middle !important;
 }
 .navgomb{
-        
+
         border-radius: 30px !important;
         padding: 8px  !important;
         text-decoration: none !important;
@@ -413,13 +467,13 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
         width:fit-content;
         font-weight: 600 !important ;
         background-color: var(--navgomb) !important;
-       
-       
+
+
 }
 .drpdwn{
     text-decoration: none !important;
     transition: 0.3s !important;
-   
+
 
 }
 .drpdwn img{
@@ -433,8 +487,8 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 #jobboldalisav, #baloldalisav{
     background-color: var(--widgethatter) !important;
     border-radius: 20px !important;
-  
-   
+
+
 }
 #bejegyzesletrehozas #bejegyzesprofilkep{
     border-radius: 100% !important;
@@ -442,12 +496,21 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 #bejegyzesletrehozas {
     background-color: var(--widgethatter) !important;
     border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+#bejegyzesletrehozas .col-auto{
+    margin-right: 0px !important;
 }
 #bejegyzesletrehozas #images, #bejegyzesletrehozas #videos{
     display: none !important    ;
 }
 #bejegyzesletrehozas #postContent::placeholder, #bejegyzesletrehozas #postTitle::placeholder{
-    color: var(--betuszin) !important;
+    color: gray !important;
+
+
 }
 .bejegyzespostolva{
     font-family: syne-regular !important;
@@ -455,22 +518,35 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     float: right !important;
     color: gray !important;
 }
-.bejegyzesalso{
-    margin: 20px !important;
-}
+
 .bejegyzescim{
-  
+    font-weight: bold !important;
+
     margin-top: 20px !important;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px !important;
+}
+.bejegyzestartalom{
+    text-align: left;
+    padding-left: 10px !important;
+    margin-bottom: 30px !important;
 }
 .bejegyzeskep{
     border-radius: 10px !important;
+
+    text-align: center !important;
     margin: 0 auto !important;
-    margin-top: 20px !important;
-  
+
+    margin-bottom: 20px !important;
+    display: block !important;
+
+    width: 100% !important;
+
 }
 #bejegyzes{
     padding: 20px !important;
+
+    margin-bottom: 40px !important;
 }
 .drop-container {
     position: relative;
@@ -497,21 +573,21 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 
 ::-webkit-scrollbar {
     width: 8px;
-   
+
   }
-  
+
 
   ::-webkit-scrollbar-track {
     background: #0D181E;
-    
+
   }
-  
+
 
   ::-webkit-scrollbar-thumb {
     background: var(--widgethatter);
     border-radius: 100px;
   }
-  
+
 
   ::-webkit-scrollbar-thumb:hover {
     background: #0D181E;
@@ -527,7 +603,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 }
  .modal-body, .modal-header, .modal-footer{
     background-color: var(--oldalhatter);
-  
+
 }
 .modal{
     backdrop-filter: blur(5px);
@@ -562,8 +638,8 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 .profilszerkesztes form label{
     color: gray !important;
     font-weight: 600 !important;
- 
-    
+
+
 }
 .profilszerkesztes #profilkep{
     border: 3px solid white;
@@ -573,7 +649,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     text-align: center !important;
     margin: 0 auto !important;
     margin-top: -60px !important;
-   
+
 }
 .profilszerkesztes #boritokep{
     border-radius: 20px !important;
@@ -594,8 +670,8 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 
 @media only screen and (max-width: 992px) {
 #profilgomb{
-  
-   
+
+
     text-align: center !important;
 }
 }
@@ -625,15 +701,15 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 }
 
 .profilszerkesztes form img{
-    
+
 }
 #profil{
     padding: 10px ;
-  
+
 }
 #boritokep{
     width: 100%;
- 
+
     max-height: 40vh ;
 }
 #profil #profilkep{
@@ -754,7 +830,7 @@ footer .list-inline{
     margin: 15px !important;
     border-radius: 20px !important;
     padding:10px !important;
-    
+
 }
 #profilok .card a{
     max-width: fit-content !important;
@@ -763,7 +839,7 @@ footer .list-inline{
     font-weight: bold !important;
     display: block !important;
     vertical-align: middle;
-    
+
 }
 #profilok .card img{
     border-radius: 100%;
@@ -772,7 +848,7 @@ footer .list-inline{
 #profilok .row{
     margin-left: 0px !important;
     margin-right: 0px !important;
-    
+
 }
 #profilok h1{
     margin:25px !important;
@@ -780,7 +856,7 @@ footer .list-inline{
 }
 .szurke{
     color: rgb(207, 207, 207);
-   
+
     font-weight: normal !important;
 }
 #profilok .card .col form{
@@ -796,7 +872,7 @@ footer .list-inline{
 
 .custom-pagination li {
     margin: 0 5px;
-  
+
 }
 
 .custom-pagination li a,
@@ -849,7 +925,7 @@ footer .list-inline{
     transition: 0.3s all;
 }
 #baloldalisav ul li {
-  
+
 }
 #baloldalisav ul{
     padding-left: 0px !important;
@@ -894,4 +970,8 @@ footer .list-inline{
 
 #zoldTema {
     background-color: #1c3b1c !important;
+}
+
+#atlatszoTema {
+    background-color: #1c303b7e !important;
 }

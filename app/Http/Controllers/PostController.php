@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Postmodel;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class PostController extends Controller
 {
@@ -40,35 +41,30 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
-        
-        $datas = new Postmodel();
-        $datas->title = $request -> titletoupload;
-        $datas->context = $request -> contexttoupload;
-        $datas->name = $request -> name;
-        $datas->username = $request -> username;
-        /*
-        $validated = $request->validate([
-            'title' => 'required|max:255',
-            'context' => 'required|max:255',
-            'imagepath' => 'required',
-        ]);
-        */
+        // Új bejegyzés létrehozása és adatok mentése
+        $data = new Postmodel();
+        $data->title = $request->titletoupload;
+        $data->context = $request->contexttoupload;
 
-        //FÁJL
-        $file = $request -> file('filetoupload');
-        //kiterjesztés
-        $extension = $request->filetoupload->extension();
-        //fájl név
-        $filename = 'kep' . time() . '.' . $extension; 
-        //elérési út
-        $path = 'user/';
-        $file->move($path, $filename);
-        $datas['imagepath'] = $filename;
+        // Aktuális bejelentkezett felhasználó azonosítójának lekérése és beállítása a user_id mezőbe
+        $data->user_id = auth()->id();
 
-        $datas->save();
-        return redirect()->refresh();
+
+        if ($request->hasFile('filetoupload')) {
+            $file = $request->file('filetoupload');
+            $extension = $file->extension();
+            $filename = 'kep' . time() . '.' . $extension;
+            $path = 'user/';
+            $file->move($path, $filename);
+            $data->imagepath = $filename;
+        }
+
+        // A bejegyzés mentése adatbázisba
+        $data->save();
+
+        return redirect()->back();
     }
+
 
     /**
      * Display the specified resource.
@@ -89,7 +85,8 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Postmodel::find($id);
+        return view('bejegyzes-szerkesztese', compact('post'));
     }
 
     /**
@@ -101,7 +98,23 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+  $post = Postmodel::find($id);
+
+    // A bejegyzés frissítése a kapott adatok alapján
+    $post->title = $request->titletoupload;
+    $post->context = $request->contexttoupload;
+    $file = $request->file('filetoupload');
+    $extension = $request->filetoupload->extension();
+    $filename = 'kep' . time() . '.' . $extension;
+    $path = 'user/';
+    $file->move($path, $filename);
+    $post->imagepath = $filename;
+
+
+    $post->save();
+
+    // Visszairányítás a bejegyzés megtekintéséhez
+    return redirect()->back();
     }
 
     /**
@@ -112,6 +125,18 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // Bejegyzés kiválasztása az azonosító alapján
+        $post = Postmodel::findOrFail($id);
+
+        // Ellenőrzés, hogy a bejegyzést a bejelentkezett felhasználó törölheti-e
+        if ($post->user_id === auth()->id() || auth()->user()->admin) {
+            // Ha a bejegyzés tulajdonosa vagy admin törli, akkor töröljük
+            $post->delete();
+
+            return redirect()->back()->with('success', 'A bejegyzés sikeresen törölve lett.');
+        } else {
+            // Ha a bejelentkezett felhasználó nem rendelkezik jogosultsággal, hibaüzenetet jelenítünk meg
+            return redirect()->back()->with('error', 'Nincs jogosultságod a bejegyzés törléséhez.');
+        }
     }
 }

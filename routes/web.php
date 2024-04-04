@@ -53,8 +53,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/bejegyzes', [PostController::class, 'create']);
     Route::get('/dashboard', [PostController::class, 'index']);
-    Route::post('/bejegyzes', [PostController::class, 'store'])->name('store');
-
+    Route::post('/bejegyzes', [PostController::class, 'store'])->name('post.store');
+    Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
+    Route::put('/posts/{post}', [PostController::class, 'update'])->name('post.update');
     Route::get('/tema', function () {
         return view('profile.tema');
     });

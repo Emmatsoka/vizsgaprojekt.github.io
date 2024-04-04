@@ -13,8 +13,9 @@
     <body class="{{ $user->tema }}">
         <div id="htrszin"></div>
         <div class="">
+           
             @include('layouts.navigation')
-
+            <div class="oldal">
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="">
@@ -31,5 +32,6 @@
         </div>
         @include('layouts.footer')
         <script src="{{ asset('styles/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    </div>
     </body>
 </html>
