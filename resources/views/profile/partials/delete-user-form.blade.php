@@ -12,7 +12,7 @@
 
             <!-- Fiók törlése gomb -->
             <button type="button" class="gomb feketehtr" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
-                {{ __('Fiók törlése') }}
+                {{ __('❌ Fiók törlése') }}
             </button>
 
             <!-- Megerősítő modális ablak -->
@@ -44,7 +44,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Mégse') }}</button>
-                                <button type="submit" class="btn btn-danger">{{ __('Fiók törlése') }}</button>
+                                <button type="submit" class="btn btn-danger">{{ __(' Fiók törlése') }}</button>
                             </div>
                         </form>
                     </div>

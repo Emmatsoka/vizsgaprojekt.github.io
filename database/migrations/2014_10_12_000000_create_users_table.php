@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('lakhely')->default('Nincs megadva');
             $table->date('szulev')->default('1979-01-01');
             $table->text('neme')->default('Nincs megadva');
+            $table->text('tema')->default('alap-tema');
             $table->boolean('admin')->default(false);
             $table->rememberToken();
             $table->timestamps();

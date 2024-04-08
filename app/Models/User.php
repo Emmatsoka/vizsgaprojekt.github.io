@@ -47,8 +47,8 @@ class User extends Authenticatable
     ];
 
 
-    public function baratok()
+    public function posts()
     {
-        return $this->belongsToMany(User::class, 'baratok', 'user_id', 'barat_id');
+        return $this->hasMany(Postmodel::class);
     }
 }

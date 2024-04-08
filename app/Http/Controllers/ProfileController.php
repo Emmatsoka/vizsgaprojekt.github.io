@@ -10,43 +10,39 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use App\Models\User;
-
+use Illuminate\Support\Facades\Session;
 
 class ProfileController extends Controller
 {
-    public function baratok($username)
+   
+    public function tema(Request $request)
     {
-        $currentUser = Auth::user(); // Az aktuális felhasználó lekérése
-        $user = User::where('username', $username)->firstOrFail();
-        $baratok = $user->baratok;
-        return view('baratok', compact('user', 'baratok', 'currentUser'));
-    }
-public function jeloles(Request $request, $barat_id)
-{
-    $user = $request->user();
-    $barat = User::findOrFail($barat_id);
-    
-    // Ellenőrizzük, hogy a felhasználó még nem jelölte-e már barátnak
-    if ($user->baratok->contains($barat)) {
-        return redirect()->back()->with('error', 'Ezt a felhasználót már jelölted barátnak!');
+        $theme = $request->input('tema');
+        
+        // Frissítsd a felhasználóhoz tartozó téma értékét az adatbázisban
+        $user = User::findOrFail(auth()->id());
+        $user->tema = $theme;
+        $user->save();
+        
+        return redirect()->back(); // Visszatérünk az előző oldalra
     }
 
-    // Jelöljük barátnak a felhasználót
-    $user->baratok()->attach($barat);
 
-    return redirect()->back()->with('success', 'Sikeresen jelölted barátnak ' . $barat->name . '-t!');
-}
 public function search(Request $request)
 {
     $query = $request->input('query');
     
     // Keresés a felhasználók között név vagy felhasználónév alapján
     $users = User::where('name', 'like', "%$query%")
-    ->orWhere('username', 'like', "%$query%")
-    ->paginate(10);
-    return view('profilok', compact('users', 'query'));
+                 ->orWhere('username', 'like', "%$query%")
+                 ->paginate(10);
+    
+    // Bejelentkezett felhasználó adatainak betöltése
+    $authUser = Auth::user();
 
+    return view('profilok', compact('users', 'query', 'authUser'));
 }
+
     public function edit(Request $request): View
     {
         return view('profile.edit', [

@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BaratController;
+use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,23 +33,41 @@ Route::get('/adatvedelem', function () {
 Route::get('/projekt', function () {
     return view('oldalak.projekt');
 });
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::get('/profile/vedelem', [ProfileController::class, 'vedelem'])->name('profile.vedelem');
     Route::patch('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::patch('/profile/profilkep', [ProfileController::class, 'profilkep'])->name('profile.profilkep');
-    Route::post('/barat/jeloles/{barat_id}', [ProfileController::class, 'jeloles'])->name('barat.jeloles');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/kereses', [ProfileController::class, 'search'])->name('search');
     Route::get('/baratok/{username}', [ProfileController::class, 'baratok'])->name('baratok');
+    Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
+    Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
+    Route::post('/tema', [ProfileController::class, 'tema'])->name('tema');
+
+    Route::get('/bejegyzes', [PostController::class, 'create']);
+    Route::get('/dashboard', [PostController::class, 'index']);
+    Route::post('/bejegyzes', [PostController::class, 'store'])->name('post.store');
+    Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
+    Route::put('/posts/{post}', [PostController::class, 'update'])->name('post.update');
+
+    Route::post('/like/add', [LikeController::class, 'likeHozzaadas'])->name('like.add');
+    Route::delete('/like/remove', [LikeController::class, 'likeTorles'])->name('like.remove');
+
+
+    Route::get('/tema', function () {
+        return view('profile.tema');
+    });
 });
 
 require __DIR__.'/auth.php';
 
-Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
-Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
 
