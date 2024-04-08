@@ -1,5 +1,7 @@
 <?php
-
+use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BaratController;
 use App\Http\Controllers\LikeController;
