@@ -64,7 +64,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/like/add', [LikeController::class, 'likeHozzaadas'])->name('like.add');
     Route::delete('/like/remove', [LikeController::class, 'likeTorles'])->name('like.remove');
 
-
+    Route::get('/send-welcome-email', [EmailController::class, 'sendWelcomeEmail']);
     Route::get('/tema', function () {
         return view('profile.tema');
     });
