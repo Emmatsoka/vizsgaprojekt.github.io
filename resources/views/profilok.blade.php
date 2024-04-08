@@ -34,15 +34,15 @@
                                 </a>
                             </div>
                             <div class="col">
-                             
+
                             </div>
-                         
+
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
-        @if(!($users->isEmpty()))
+        @if($users->total() > 10)
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <ul class="custom-pagination">
@@ -63,11 +63,12 @@
                         @if ($users->hasMorePages())
                             <li><a href="{{ $users->appends(request()->input())->nextPageUrl() }}">Következő →</a></li>
                         @else
-                            <li class="disabled"><span>Következő</span></li>
+                            <li class="disabled"><span>Következő →</span></li>
                         @endif
                     </ul>
                 </div>
             </div>
         @endif
     </div>
+</div>
 </x-app-layout>

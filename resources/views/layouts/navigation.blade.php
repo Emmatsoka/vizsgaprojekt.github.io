@@ -10,8 +10,8 @@
                 <li class="nav-item">
 
                     <form class="d-flex" action="{{ route('search') }}" method="GET">
-                        <input class="me-2" type="search" placeholder="Keresés" aria-label="Search" name="query">
-                        <button class="gomb keresogomb  icon " type="submit"><img src="{{ asset('pics/search.png') }}" height="auto" class="invertalt" width="22px"></button>
+                        <input class="me-2" type="text" placeholder="Keresés" aria-label="Search" name="query">
+                        <button class=" keresogomb  icon " type="submit"><img src="{{ asset('pics/search.png') }}" height="auto" class="invertalt" width="22px"></button>
                     </form>
                 </li>
             </ul>
@@ -52,10 +52,10 @@
 
 
               <li class="nav-item navgomb ">
-                <a class="">        <form method="POST" action="{{ route('logout') }}">
+                     <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit" class="dropdown-item"><img src="{{asset('pics/logout.png')}}" height="auto"  class="icon attunes"  width="20px" style="margin-right: 0px !important"></button>
-                </form></a>
+                </form>
             </li>
             </ul>
         </div>

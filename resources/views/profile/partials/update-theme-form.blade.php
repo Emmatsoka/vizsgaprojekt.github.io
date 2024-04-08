@@ -13,7 +13,7 @@
             <form id="themeForm" method="POST" action="{{ route('tema') }}" class="mb-3">
                 @csrf
                 <div class="mb-3">
-                    <label for="tema" class="form-label">{{ __('Válassz témát:') }}</label>
+                    <label for="tema" class="form-label">{{ __('🎨 Válassz témát:') }}</label>
                     <div>
                         <button id="feherTema" type="submit" name="tema" value="feher-tema" class="tema-gomb">Világos téma</button>
                         <button id="atlatszoTema" type="submit" name="tema" value="alap-tema" class="tema-gomb">Alap téma</button>

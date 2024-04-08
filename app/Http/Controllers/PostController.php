@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Postmodel;
 use App\Models\User;
+use Illuminate\View\View;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
@@ -17,8 +18,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
-        $data = Postmodel::all();
+        $data = Postmodel::paginate(5);
+
         return view('dashboard')->with('data', $data);
     }
 
@@ -43,7 +44,6 @@ class PostController extends Controller
     {
         // Új bejegyzés létrehozása és adatok mentése
         $data = new Postmodel();
-        $data->title = $request->titletoupload;
         $data->context = $request->contexttoupload;
 
         // Aktuális bejelentkezett felhasználó azonosítójának lekérése és beállítása a user_id mezőbe
@@ -100,16 +100,15 @@ class PostController extends Controller
     {
   $post = Postmodel::find($id);
 
-    // A bejegyzés frissítése a kapott adatok alapján
-    $post->title = $request->titletoupload;
     $post->context = $request->contexttoupload;
+    if ($request->hasFile('filetoupload')) {
     $file = $request->file('filetoupload');
     $extension = $request->filetoupload->extension();
     $filename = 'kep' . time() . '.' . $extension;
     $path = 'user/';
     $file->move($path, $filename);
     $post->imagepath = $filename;
-
+    }
 
     $post->save();
 

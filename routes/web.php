@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BaratController;
+use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
@@ -57,6 +58,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
     Route::put('/posts/{post}', [PostController::class, 'update'])->name('post.update');
+
+    Route::post('/like/add', [LikeController::class, 'likeHozzaadas'])->name('like.add');
+    Route::delete('/like/remove', [LikeController::class, 'likeTorles'])->name('like.remove');
+
+
     Route::get('/tema', function () {
         return view('profile.tema');
     });

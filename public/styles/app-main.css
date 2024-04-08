@@ -1,4 +1,30 @@
+.alap-tema{
+    --oldalhatter: rgb(13, 24, 30);
+    --widgethatter: rgba(19, 33, 41, 0.5);
+    --profilkepborder: rgba(19, 33, 41, 0.5) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+    --betuszin: white;
+    --shadow: rgba(0, 0, 0, 0.274);
+    --feketehtrbg: rgba(255, 255, 255, 0.699);
+    --feketehtrclr: rgb(0, 0, 0);
+    --feketehtrbghover: rgba(31, 52, 65, 0.5);
+    --feherhtrbg: rgba(25, 44, 54, 0.5);
+    --feherhtrclr: white;
+    --feherhtrbghover: rgba(31, 52, 65, 0.5);
 
+    --inputcolor: rgba(31, 52, 65, 0.418);
+    --hoverbg: rgba(31, 52, 65, 0.5);
+    --bordercolor: rgba(47, 73, 88, 0.349);
+    --htrszin: rgba(13, 24, 30, 0.548);
+
+    --designtitle: #1c303b; /* A betűszín nem változik, a háttere átlátszó */
+    --designsection: rgba(22, 39, 48, 0.5);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: rgba(25, 44, 54, 0.5);
+    --navgombhover: rgba(31, 52, 65, 0.5);
+}
 .sotetkek-tema{
     --oldalhatter: #0d181e;
     --widgethatter: #132129;
@@ -16,6 +42,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #1f3441;
 
+    --inputcolor: rgba(31, 52, 65, 0.5);
     --hoverbg: #1f3441;
     --bordercolor: #2f4958;
     --htrszin:#0d181ed2;
@@ -27,32 +54,7 @@
     --navgomb: #192c36;
     --navgombhover:#1f3441;
 }
-.alap-tema{
-    --oldalhatter: rgb(13, 24, 30);
-    --widgethatter: rgba(19, 33, 41, 0.5);
-    --profilkepborder: rgba(19, 33, 41, 0.5) !important;
-    --wesocnavkep: invert(0%);
-    --invertalt2: invert(100%);
-    --betuszin: white;
-    --shadow: rgba(0, 0, 0, 0.274);
-    --feketehtrbg: rgba(255, 255, 255, 0.699);
-    --feketehtrclr: rgb(0, 0, 0);
-    --feketehtrbghover: rgba(31, 52, 65, 0.5);
-    --feherhtrbg: rgba(25, 44, 54, 0.5);
-    --feherhtrclr: white;
-    --feherhtrbghover: rgba(31, 52, 65, 0.5);
 
-    --hoverbg: rgba(31, 52, 65, 0.5);
-    --bordercolor: rgba(47, 73, 88, 0.5);
-    --htrszin: rgba(13, 24, 30, 0.548);
-
-    --designtitle: #1c303b; /* A betűszín nem változik, a háttere átlátszó */
-    --designsection: rgba(22, 39, 48, 0.5);
-    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-    --navgomb: rgba(25, 44, 54, 0.5);
-    --navgombhover: rgba(31, 52, 65, 0.5);
-}
 
 .feher-tema{
     --oldalhatter: #f2f2f2;
@@ -72,14 +74,15 @@
     --feherhtrbghover: rgb(54, 54, 54);
 
 
+    --inputcolor: rgba(214, 214, 214, 0.432);
     --hoverbg: #eeeeeeab;
     --bordercolor: rgba(128, 128, 128, 0.521);
-    --htrszin:#ffffffaf;
+    --htrszin:#ffffffd5;
 
     --designtitle:#dfdfdfdc;
     --designsection: #eeeeeebe;
     --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(1, 1, 1, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    --navgomb: #f2f2f288;
+    --navgomb: #e4e4e49d;
     --navgombhover:rgba(216, 216, 216, 0.459);
 }
 
@@ -101,6 +104,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #411f1fd2;
 
+    --inputcolor: rgba(31, 52, 65, 0.5);
     --hoverbg: #411f1f;
     --bordercolor: #582f2f;
     --htrszin:#1e0d0dd2;
@@ -130,6 +134,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #1f4121;
 
+    --inputcolor: rgba(31, 52, 65, 0.5);
     --hoverbg: #23411f;
     --bordercolor: #244926;
     --htrszin:#0f1e0dd2;
@@ -159,6 +164,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #413f1f;
 
+    --inputcolor: rgba(31, 52, 65, 0.5);
     --hoverbg: #41401f;
     --bordercolor: #58542f;
     --htrszin:#1e1c0dd2;
@@ -188,6 +194,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #2c1f41;
 
+    --inputcolor: rgba(31, 52, 65, 0.5);
     --hoverbg: #291f41;
     --bordercolor: #3d2f58;
     --htrszin:#140d1ed2;
@@ -229,7 +236,7 @@
     animation-fill-mode: forwards;
 }
 body {
-
+    font-display: optional !important;
 }
 
 @keyframes attunesanimacio {
@@ -246,7 +253,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--oldalhatter) !important;
-    background-image: url(../pics/htr2_blr.png) !important;
+    background-image: url(../pics/htr2_blr.png);
     background-attachment: fixed ;
 
     font-family: syne-regular !important;
@@ -268,6 +275,7 @@ main{
     z-index: -10;
     background-color: var(--htrszin);
     width: 100% !important;
+    backdrop-filter:blur(20px);
 }
 nav{
     margin: 15px !important;
@@ -294,7 +302,7 @@ nav .navbar-brand img{
     background-image: var(--navbartoggler) !important;
 }
 @media only screen and (min-width: 992px) {
-    nav input[type="search"]{
+    nav input[type="text"]{
         width: 24vw !important;
     }
    .nav-item{
@@ -325,12 +333,13 @@ nav .navbar-brand img{
     transition: 0.4s all !important;
 }
 .keresogomb:hover{
-    background: var(--navgombhover) !important;
-    color: white !important;
-    transition: 0.4s all !important;
+
+    opacity: 70%;
 }
 .keresogomb{
-    background: var(--navgomb) !important;
+    background: transparent !important;
+    border:none !important;
+    margin-left: -60px !important;
     color: var(--feketehtrclr) !important;
     transition: 0.4s all !important;
 }
@@ -394,10 +403,10 @@ nav .navbar-brand img{
 }
 
 #bejegyzesletrehozas textarea, nav input, #bejegyzesletrehozas input{
-    background-color: transparent !important;
+    background-color: var(--widgethatter) !important;
     padding: 10px !important;
     padding-left: 15px !important;
-    border: 1px solid var(--bordercolor);
+    border: 1px solid var(--inputcolor);
     border-radius: 20px !important ;
     color: var(--betuszin) !important;
 }
@@ -405,7 +414,24 @@ nav .navbar-brand img{
     margin-bottom: 0px !important;
 }
 #bejegyzes .card-header{
-    border-radius: 15px !important;
+
+    padding-left: 5px;
+    background-color: transparent !important;
+
+}
+.bejegyzesgombok{
+    display: flex !important;
+    float: right !important;
+}
+.bejegyzesgombok .drpdwn{
+    font-weight: 600 !important;
+}
+#bejegyzes .bejegyzesnev{
+    display: inline-block !important;
+    margin: 0px;
+    list-style-type: none !important;
+    padding-left: 10px !important;
+    vertical-align: middle !important;
 }
 button{
     border-radius: 20px !important;
@@ -413,12 +439,45 @@ button{
 #kozepsosav{
     margin: 0 !important;
 }
+@media only screen and (min-width: 992px) {
+#bejegyzes .like-gomb{
+    float:left !important;
+    display: block !important;
+    margin:0px 5px 0px !important;
+}
+#bejegyzes .muvelet-gomb{
+    float:right !important;
+    margin:0px 5px 0px !important;
+    display: block !important;
+}
+}
+@media only screen and (max-width: 992px) {
+    #bejegyzes .like-gomb{
+
+        display: inline-block !important;
+        margin:0 auto !important;
+        margin:0px 5px 0px !important;
+
+    }
+    #bejegyzes .muvelet-gomb{
+
+        display: inline-block !important;
+
+        margin:0px 5px 0px !important;
+    }
+}
 #bejegyzes{
+
     background-color: var(--widgethatter) !important;
     border-radius: 20px !important;
 }
-nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilszerkesztes, .card{
+nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
+
     background: var(--widgethatter);
+    box-shadow: 0px 0px 25px var(--shadow);
+
+}
+#jobboldalisav ul li, #baloldalisav ul li{
     box-shadow: 0px 0px 25px var(--shadow);
 }
 .dropdown a{
@@ -484,12 +543,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     margin-right: 10px !important;
 }
 
-#jobboldalisav, #baloldalisav{
-    background-color: var(--widgethatter) !important;
-    border-radius: 20px !important;
 
-
-}
 #bejegyzesletrehozas #bejegyzesprofilkep{
     border-radius: 100% !important;
 }
@@ -515,7 +569,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 .bejegyzespostolva{
     font-family: syne-regular !important;
     font-weight: normal !important;
-    float: right !important;
+
     color: gray !important;
 }
 
@@ -528,6 +582,7 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
 }
 .bejegyzestartalom{
     text-align: left;
+    padding-top: 20px !important;
     padding-left: 10px !important;
     margin-bottom: 30px !important;
 }
@@ -761,6 +816,10 @@ nav, #bejegyzes, #jobboldalisav, #baloldalisav, #bejegyzesletrehozas, .profilsze
     margin: 10px !important;
 
 }
+
+.balsav{
+position: fixed !important;
+}
 .card{
     border: none !important;
     margin-bottom: 10px !important;
@@ -898,37 +957,40 @@ footer .list-inline{
 
 #baloldalisav, #jobboldalisav{
     position: sticky !important;
-    top: 0 !important;
+    top: 13.50vh !important;
+    padding-top: 0px !important;
 }
 
-#baloldalisav ul li{
+#baloldalisav ul li, #jobboldalisav ul li{
     list-style-type: none !important;
+
 }
-#baloldalisav ul li a{
+#baloldalisav ul li a, #jobboldalisav ul li a{
     transition: 0.3s all;
     color: var(--betuszin) !important;
-      background-color:  var(--navgomb) !important;
+    background-color:  var(--widgethatter) !important;
     width: 100% !important;
     margin-bottom: 10px !important;
-    margin-top: 10px !important;
     border-radius: 20px !important;
-    padding: 10px !important;
+    padding: 15px !important;
     text-decoration: none !important;
     display: block !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
 }
-#baloldalisav ul li a img{
+#baloldalisav ul li a img, #jobboldalisav ul li a img{
     margin-right: 10px !important;
     border-radius: 100% !important;
 }
-#baloldalisav ul li a:hover{
+#baloldalisav ul li a:hover, #jobboldalisav ul li a:hover{
     background-color:  var(--navgombhover) !important;
     transition: 0.3s all;
 }
-#baloldalisav ul li {
-
-}
-#baloldalisav ul{
+#baloldalisav ul, #jobboldalisav ul{
     padding-left: 0px !important;
+
 }
 
 .tema-gomb {
@@ -974,4 +1036,14 @@ footer .list-inline{
 
 #atlatszoTema {
     background-color: #1c303b7e !important;
+}
+
+.mentve{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+    margin-top: 10px;
+
+
 }
