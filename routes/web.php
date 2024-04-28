@@ -7,7 +7,7 @@ use App\Http\Controllers\BaratController;
 use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\CommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,26 +49,36 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile/profilkep', [ProfileController::class, 'profilkep'])->name('profile.profilkep');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/kereses', [ProfileController::class, 'search'])->name('search');
-    Route::get('/baratok/{username}', [ProfileController::class, 'baratok'])->name('baratok');
+
     Route::get('/profilok', [ProfileController::class, 'showAllUsers']);
     Route::get('/profil/{username}', [ProfileController::class, 'show'])->name('profil');
     Route::post('/tema', [ProfileController::class, 'tema'])->name('tema');
 
-    Route::get('/bejegyzes', [PostController::class, 'create']);
+
     Route::get('/dashboard', [PostController::class, 'index']);
+    Route::get('/bejegyzes', [PostController::class, 'create']);
     Route::post('/bejegyzes', [PostController::class, 'store'])->name('post.store');
+    Route::get('/bejegyzes/{post}/szerkesztes', [PostController::class, 'edit'])->name('post.edit');
+    Route::put('/bejegyzes/{post}', [PostController::class, 'update'])->name('post.update');
     Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
-    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
-    Route::put('/posts/{post}', [PostController::class, 'update'])->name('post.update');
 
+    Route::get('/bejegyzes/{id}', [PostController::class, 'show'])->name('post.show');
     Route::post('/like/add', [LikeController::class, 'likeHozzaadas'])->name('like.add');
-    Route::delete('/like/remove', [LikeController::class, 'likeTorles'])->name('like.remove');
 
+    Route::delete('/comment/{id}', [CommentController::class, 'destroy'])->name('comment.destroy');
+    Route::post('/comment', [CommentController::class, 'store'])->name('comment.store');
     Route::get('/send-welcome-email', [EmailController::class, 'sendWelcomeEmail']);
     Route::get('/tema', function () {
         return view('profile.tema');
     });
+    Route::get('/baratok', function () {
+        return view('baratok');
+    });
 });
+
+
+
+
 
 require __DIR__.'/auth.php';
 

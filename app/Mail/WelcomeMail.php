@@ -26,7 +26,7 @@ class WelcomeMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Üdv a wesox demo emailjén',
+            subject: 'Üdv a wesoc demo emailjén',
         );
     }
 
@@ -45,7 +45,7 @@ class WelcomeMail extends Mailable
     }
 
     /**
-     * 
+     *
      *
      * @return array<int, \Illuminate\Mail\Mailables\Attachment>
      */

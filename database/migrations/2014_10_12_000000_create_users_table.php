@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
@@ -23,17 +21,15 @@ return new class extends Migration
             $table->string('bemutatkozas')->default('Nincs megadva');
             $table->string('lakhely')->default('Nincs megadva');
             $table->date('szulev')->default('1979-01-01');
-            $table->text('neme')->default('Nincs megadva');
-            $table->text('tema')->default('alap-tema');
+            $table->string('neme')->default('Nincs megadva');
+            $table->string('tema')->default('alap-tema');
             $table->boolean('admin')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('users');

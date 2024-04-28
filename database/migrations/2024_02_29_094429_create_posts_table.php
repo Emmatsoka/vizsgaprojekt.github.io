@@ -16,13 +16,12 @@ class CreatePostsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
             $table->longtext("context");
-            $table->string("imagepath")->nullable();
+            $table->string("title");
+            $table->string("filepath")->nullable();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down()
     {
         Schema::dropIfExists('posts');

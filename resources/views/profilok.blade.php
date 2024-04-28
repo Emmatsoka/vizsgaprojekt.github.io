@@ -18,12 +18,12 @@
                     <div class="card">
                         <div class="row">
                             <div class="col">
-                                <a href="{{ route('profil', ['username' => $user->username]) }}">
-                                    <img src="{{ URL::asset('user/'.$user->profilkep) }}" height="auto" width="80px">
+                                <a href="{{ route('profil', ['username' => $user->username]) }}" >
+                                    <img src="{{ URL::asset('user/'.$user->profilkep) }}" height="80px" width="80px">
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="{{ route('profil', ['username' => $user->username]) }}">
+                                <a href="{{ route('profil', ['username' => $user->username]) }}" id="profilnev">
                                     {{ $user->name }}<br><span class="szurke">{{ $user->username }}</span>
                                     @if ($user->admin)
                                         <br><span class="szurke"> Adminisztrátor </span>
@@ -33,8 +33,13 @@
                                     @endif
                                 </a>
                             </div>
-                            <div class="col">
 
+                            <div class="col ">
+                                @if (Auth::user()->username !== $user->username)
+                                <div class="baratkerelemgombok" >
+                                <a href="{{ url('baratok')}}" class="gomb feketehtr " >Jelölés</a>
+                            </div>
+                            @endif
                             </div>
 
                         </div>

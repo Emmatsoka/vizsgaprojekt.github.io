@@ -17,34 +17,46 @@
             </ul>
 
             <ul class="navbar-nav">
+
                 <li class="nav-item ">
                <div class="dropdown  ">
+
                     <a class=" drpdwn attunes profil" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" class="" height="auto" width="35px">{{Auth::user()->name}}
+                        <img src="{{URL::asset('user/'.Auth::user()->profilkep)}}" class="" height="35px" width="35px">{{Auth::user()->name}}
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ route('profil', ['username' => Auth::user()->username]) }}"><img src="{{asset('pics/user.png')}}"  height="auto" width="25px">{{ __('Profilom') }}</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item dp-item" href="{{ route('profil', ['username' => Auth::user()->username]) }}"><img src="{{asset('pics/user.png')}}"  height="25px" width="25px">{{ __('Profilom') }}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ route('baratok', ['username' => Auth::user()->username]) }}"><img src="{{asset('pics/friends.png')}}"  height="auto" width="25px">{{ __('Barátaim') }}</a></li>
+                        <li><a class="dropdown-item dp-item" href="{{ url('baratok')}} "><img src="{{asset('pics/friends.png')}}"  height="auto" width="25px">{{ __('Barátaim') }}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ route('profile.edit') }}"><img src="{{asset('pics/editprofile.png')}}"  height="auto" width="25px">{{ __('Profil szerkesztése') }}</a></li>
+                        <li><a class="dropdown-item dp-item" href="{{ route('profile.edit') }}"><img src="{{asset('pics/editprofile.png')}}"  height="auto" width="25px">{{ __('Profil szerkesztése') }}</a></li>
 
 
                     </ul>
                 </div>
             </li>
+            <li class="nav-item ">
+
+                <div class="dropdown navgomb " >
+                 <a class=" drpdwn " href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="{{asset('pics/notification.png')}}" class="icon invertalt attunes" height="auto" width="20px"> <div class="mobilosmegjelenes">Értesítések </div>
+                 </a>
+                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="width:20vw">
+                     <li class="text text-center"><h3>Fejlesztés alatt</h3><p class="fw-normal">Gyere vissza később..</p></li>
+
+                 </ul>
+             </div>
+         </li>
                 <li class="nav-item ">
 
                        <div class="dropdown navgomb ">
                         <a class=" drpdwn " href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="{{asset('pics/options.png')}}" class="icon invertalt attunes" height="auto" width="20px">
+                            <img src="{{asset('pics/options.png')}}" class="icon invertalt attunes" height="auto" width="20px"> <div class="mobilosmegjelenes">Opciók </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('profile.vedelem') }}"><img src="{{asset('pics/shield.png')}}"  height="auto" width="25px">Védelem</a></li>
+                            <li><a class="dropdown-item dp-item" href="{{ route('profile.vedelem') }}"><img src="{{asset('pics/shield.png')}}"  height="auto" width="25px">Védelem</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#"><img src="{{asset('pics/optionsdrp.png')}}"  height="auto" width="25px">Beállítások</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="{{url('tema')}}"><img src="{{asset('pics/theme.png')}}" height="auto" width="25px">Kinézet</a></li>
+                            <li><a class="dropdown-item dp-item" href="{{url('tema')}}"><img src="{{asset('pics/theme.png')}}" height="auto" width="25px">Kinézet</a></li>
                         </ul>
                     </div>
                 </li>
@@ -54,10 +66,20 @@
               <li class="nav-item navgomb ">
                      <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button type="submit" class="dropdown-item"><img src="{{asset('pics/logout.png')}}" height="auto"  class="icon attunes"  width="20px" style="margin-right: 0px !important"></button>
+                    <button type="submit" class="dropdown-item"><img src="{{asset('pics/logout.png')}}" height="auto"  class="icon attunes"  width="20px" style="margin-right: 0px !important"><div class="mobilosmegjelenes">Kijelentkezés </div></button>
                 </form>
             </li>
             </ul>
         </div>
     </div>
 </nav>
+<script>
+    document.getElementById("notificationButton").addEventListener("click", function() {
+    var container = document.getElementById("notificationContainer");
+    if (container.style.display === "none" || container.style.display === "") {
+        container.style.display = "block";
+    } else {
+        container.style.display = "none";
+    }
+});
+</script>

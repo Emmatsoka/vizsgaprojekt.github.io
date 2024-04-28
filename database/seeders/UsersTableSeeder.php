@@ -19,18 +19,27 @@ class UsersTableSeeder extends Seeder
     {
         $faker = Faker::create('hu_HU');
 
-        foreach (range(1, 10) as $index) {
-            // Generálj egyedi fájlnevet a képnek
+        foreach (range(1, 20) as $index) {
+
             $profilkepFileName = 'profilkep_' . $index . '.jpg';
             $boritokepFileName = 'boritokep_' . $index . '.jpg';
 
-        
-            // Felhasználó létrehozása a generált képekkel
+
+            $profilkepUrl = 'https://loremflickr.com/200/200';
+            $profilkepContent = file_get_contents($profilkepUrl);
+            File::put(public_path('user/' . $profilkepFileName), $profilkepContent);
+
+
+            $boritokepUrl = 'https://picsum.photos/1920/800';
+            $boritokepContent = file_get_contents($boritokepUrl);
+            File::put(public_path('user/' . $boritokepFileName), $boritokepContent);
+
+
             User::create([
                 'name' => $faker->name,
                 'username' => $faker->unique()->userName,
-                'profilkep' =>  public_path('pics/felhasznalo.png'),
-                'boritokep' =>  public_path('pics/boritokep.png'),
+                'profilkep' =>  $profilkepFileName,
+                'boritokep' =>  $boritokepFileName,
                 'email' => $faker->unique()->safeEmail,
                 'email_verified_at' => now(),
                 'password' => bcrypt('password'),
@@ -40,7 +49,7 @@ class UsersTableSeeder extends Seeder
                 'neme' => $faker->randomElement(['férfi', 'nő', 'Nincs megadva']),
                 'admin' => false,
                 'remember_token' => Str::random(10),
-                
+
             ]);
         }
     }

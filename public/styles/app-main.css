@@ -1,60 +1,86 @@
 .alap-tema{
     --oldalhatter: rgb(13, 24, 30);
-    --widgethatter: rgba(19, 33, 41, 0.5);
-    --profilkepborder: rgba(19, 33, 41, 0.5) !important;
+    --widgethatter: rgba(19, 33, 41, 0.7);
+    --profilkepborder: rgba(19, 33, 41, 0.7) !important;
     --wesocnavkep: invert(0%);
     --invertalt2: invert(100%);
     --betuszin: white;
     --shadow: rgba(0, 0, 0, 0.274);
     --feketehtrbg: rgba(255, 255, 255, 0.699);
     --feketehtrclr: rgb(0, 0, 0);
-    --feketehtrbghover: rgba(31, 52, 65, 0.5);
-    --feherhtrbg: rgba(25, 44, 54, 0.5);
+    --feketehtrbghover: rgba(31, 52, 65, 0.7);
+    --feherhtrbg: rgba(25, 44, 54, 0.7);
     --feherhtrclr: white;
-    --feherhtrbghover: rgba(31, 52, 65, 0.5);
+    --feherhtrbghover: rgba(31, 52, 65, 0.7);
 
-    --inputcolor: rgba(31, 52, 65, 0.418);
+    --inputcolor: rgba(31, 52, 65, 0.7);
     --hoverbg: rgba(31, 52, 65, 0.5);
-    --bordercolor: rgba(47, 73, 88, 0.349);
-    --htrszin: rgba(13, 24, 30, 0.548);
+    --bordercolor: rgba(47, 73, 88, 0.7);
+    --htrszin: rgba(13, 24, 30, 0.175);
 
     --designtitle: #1c303b; /* A betűszín nem változik, a háttere átlátszó */
-    --designsection: rgba(22, 39, 48, 0.5);
+    --designsection: rgba(22, 39, 48, 0.7);
     --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-    --navgomb: rgba(25, 44, 54, 0.5);
-    --navgombhover: rgba(31, 52, 65, 0.5);
+    --navgomb: rgba(25, 44, 54, 0.7);
+    --navgombhover: rgba(31, 52, 65, 0.7);
+    --bgimg: url(../pics/alaphtr.svg);
 }
-.sotetkek-tema{
-    --oldalhatter: #0d181e;
-    --widgethatter: #132129;
-    --betuszin: white;
-    --designh5:#add5ec;
-    --profilkepborder: var(--widgethatter) !important;
+.lila-tema{
+    --oldalhatter: rgb(13, 14, 30);
+    --widgethatter: rgba(19, 19, 41, 0.7);
+    --profilkepborder: rgba(21, 19, 41, 0.7) !important;
     --wesocnavkep: invert(0%);
     --invertalt2: invert(100%);
+    --betuszin: white;
+    --shadow: rgba(0, 0, 0, 0.274);
+    --feketehtrbg: rgba(255, 255, 255, 0.699);
+    --feketehtrclr: rgb(0, 0, 0);
+    --feketehtrbghover: rgba(34, 31, 65, 0.7);
+    --feherhtrbg: rgba(28, 25, 54, 0.7);
+    --feherhtrclr: white;
+    --feherhtrbghover: rgba(34, 31, 65, 0.7);
 
-    --shadow:rgba(0, 0, 0, 0.274);
-    --feketehtrbg: #ffffff;
-    --feketehtrclr: black;
-    --feketehtrbghover: #1f3441;
-    --feherhtrbg: #192c36;
-    --feherhtrclr: #ffffff;
-    --feherhtrbghover: #1f3441;
+    --inputcolor: rgba(33, 31, 65, 0.7);
+    --hoverbg: rgba(33, 31, 65, 0.5);
+    --bordercolor: rgba(47, 47, 88, 0.7);
+    --htrszin: rgba(14, 13, 30, 0.175);
 
-    --inputcolor: rgba(31, 52, 65, 0.5);
-    --hoverbg: #1f3441;
-    --bordercolor: #2f4958;
-    --htrszin:#0d181ed2;
+    --designtitle: #1c1c3b; /* A betűszín nem változik, a háttere átlátszó */
+    --designsection: rgba(25, 22, 48, 0.7);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-    --designtitle:#1c303b;
-    --designsection: #162730;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-    --navgomb: #192c36;
-    --navgombhover:#1f3441;
+    --navgomb: rgba(28, 25, 54, 0.7);
+    --navgombhover: rgba(33, 31, 65, 0.7);
+    --bgimg: url(../pics/lilahtr.svg);
 }
+.rozsa-tema{
+    --oldalhatter: rgb(252, 204, 229);
+    --widgethatter: rgba(255, 204, 229, 0.7);
+    --profilkepborder: rgba(255, 204, 229, 0.7) !important;
+    --wesocnavkep: invert(100%);
+    --invertalt2: invert(0%);
+    --betuszin: black;
+    --shadow:rgba(0, 0, 0, 0.13);
+    --feketehtrbg: rgb(254, 96, 173);
+    --feketehtrclr: rgb(255, 204, 229);
+    --feketehtrbghover: rgba(255, 204, 229, 0.7);
+    --feherhtrbg: rgba(255, 204, 229, 0.7);
+    --feherhtrclr: rgb(255, 204, 229);
+    --feherhtrbghover: rgba(255, 204, 229, 0.7);
 
+    --inputcolor: rgba(254, 154, 202, 0.7);
+    --hoverbg: rgba(255, 204, 229, 0.5);
+    --bordercolor: rgba(255, 204, 229, 0.7);
+    --htrszin: rgba(255, 204, 229, 0.175);
+    --designtitle: rgb(255, 170, 211);
+    --designsection: rgba(255, 204, 229, 0.7);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: rgba(255, 204, 229, 0.7);
+    --navgombhover: rgba(255, 204, 229, 0.7);
+    --bgimg: url(../pics/rozsahtr.svg);
+}
 
 .feher-tema{
     --oldalhatter: #f2f2f2;
@@ -69,7 +95,7 @@
     --feketehtrbg: #222c31;
     --feketehtrclr: #f5f5f5;
     --feketehtrbghover: rgb(216, 216, 216);
-    --feherhtrbg: #f3f3f3d2;
+    --feherhtrbg: #ffffff93;
     --feherhtrclr: black;
     --feherhtrbghover: rgb(54, 54, 54);
 
@@ -79,17 +105,48 @@
     --bordercolor: rgba(128, 128, 128, 0.521);
     --htrszin:#ffffffd5;
 
-    --designtitle:#dfdfdfdc;
-    --designsection: #eeeeeebe;
+    --designtitle:#e1e1e1dc;
+    --designsection: #e6e6e6be;
     --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(1, 1, 1, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    --navgomb: #e4e4e49d;
+    --navgomb: #ffffff93;
     --navgombhover:rgba(216, 216, 216, 0.459);
+    --bgimg: url(../pics/feherhtr.svg);
 }
+.kek-tema{
+    --oldalhatter: rgb(13, 18, 30);
+    --widgethatter: rgba(19, 26, 41, 0.7);
+    --profilkepborder: rgba(19, 28, 41, 0.7) !important;
+    --wesocnavkep: invert(0%);
+    --invertalt2: invert(100%);
+    --betuszin: white;
+    --shadow: rgba(0, 0, 0, 0.274);
+    --feketehtrbg: rgba(255, 255, 255, 0.699);
+    --feketehtrclr: rgb(0, 0, 0);
+    --feketehtrbghover: rgba(31, 40, 65, 0.7);
+    --feherhtrbg: rgba(25, 32, 54, 0.7);
+    --feherhtrclr: white;
+    --feherhtrbghover: rgba(31, 42, 65, 0.7);
+
+    --inputcolor: rgba(31, 40, 65, 0.7);
+    --hoverbg: rgba(31, 40, 65, 0.5);
+    --bordercolor: rgba(47, 57, 88, 0.7);
+    --htrszin: rgba(13, 18, 30, 0.175);
+
+    --designtitle: #1c243b; /* A betűszín nem változik, a háttere átlátszó */
+    --designsection: rgba(22, 28, 48, 0.7);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    --navgomb: rgba(25, 29, 54, 0.7);
+    --navgombhover: rgba(31, 42, 65, 0.7);
+    --bgimg: url(../pics/kekhtr.svg);
+}
+
+
 
 
 .piros-tema{
     --oldalhatter: #1e0d0ddc;
-    --widgethatter: #2913136b;
+    --widgethatter: #291313c6;
     --betuszin: white;
     --designh5:#ecadad;
     --profilkepborder: var(--widgethatter) !important;
@@ -104,7 +161,7 @@
     --feherhtrclr: #ffffff;
     --feherhtrbghover: #411f1fd2;
 
-    --inputcolor: rgba(31, 52, 65, 0.5);
+    --inputcolor: rgba(65, 31, 31, 0.5);
     --hoverbg: #411f1f;
     --bordercolor: #582f2f;
     --htrszin:#1e0d0dd2;
@@ -115,11 +172,12 @@
 
     --navgomb: var(--feherhtrbg);
     --navgombhover: var(--feherhtrbghover);
+    --bgimg: url(../pics/piroshtr.svg);
 }
 
 .zold-tema{
-    --oldalhatter: #0e1e0d;
-    --widgethatter: #132917;
+    --oldalhatter: #0d1e0e;
+    --widgethatter: #132916;
     --betuszin: white;
     --designh5:#b7ecad;
     --profilkepborder: var(--widgethatter) !important;
@@ -129,83 +187,54 @@
     --shadow:rgba(0, 0, 0, 0.274);
     --feketehtrbg: #ffffff;
     --feketehtrclr: black;
-    --feketehtrbghover: #1f4124;
-    --feherhtrbg: #193619;
+    --feketehtrbghover: #1f4126;
+    --feherhtrbg: #19361c;
     --feherhtrclr: #ffffff;
-    --feherhtrbghover: #1f4121;
+    --feherhtrbghover: #1f4125;
 
-    --inputcolor: rgba(31, 52, 65, 0.5);
-    --hoverbg: #23411f;
+    --inputcolor: rgba(31, 65, 34, 0.5);
+    --hoverbg: #1f4120;
     --bordercolor: #244926;
-    --htrszin:#0f1e0dd2;
+    --htrszin:#0d1e0dd2;
 
-    --designtitle:#1c3b1c;
+    --designtitle:#1c3b21;
     --designsection: #163016;
     --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
     --navgomb: #19361b;
     --navgombhover: #1f4121;
+    --bgimg: url(../pics/zoldhtr.svg);
 }
 
-.sarga-tema{
-    --oldalhatter: #1e1d0d;
-    --widgethatter: #292613;
-    --betuszin: white;
-    --designh5:#ece6ad;
-    --profilkepborder: var(--widgethatter) !important;
+.narancs-tema{
+    --oldalhatter: rgb(97, 56, 3);
+    --widgethatter: rgba(113, 74, 2, 0.7);
+    --profilkepborder: rgba(113, 70, 0, 0.7) !important;
     --wesocnavkep: invert(0%);
     --invertalt2: invert(100%);
-
-    --shadow:rgba(0, 0, 0, 0.274);
-    --feketehtrbg: #ffffff;
-    --feketehtrclr: black;
-    --feketehtrbghover: #413f1f;
-    --feherhtrbg: #363619;
-    --feherhtrclr: #ffffff;
-    --feherhtrbghover: #413f1f;
-
-    --inputcolor: rgba(31, 52, 65, 0.5);
-    --hoverbg: #41401f;
-    --bordercolor: #58542f;
-    --htrszin:#1e1c0dd2;
-
-    --designtitle:#3b3a1c;
-    --designsection: #302d16;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-    --navgomb: #363319;
-    --navgombhover: #413e1f;
-}
-
-.lila-tema{
-    --oldalhatter: #140d1e;
-    --widgethatter: #1b1329;
     --betuszin: white;
-    --designh5:#ece6ad;
-    --profilkepborder: var(--widgethatter) !important;
-    --wesocnavkep: invert(0%);
-    --invertalt2: invert(100%);
+    --shadow: rgba(0, 0, 0, 0.274);
+    --feketehtrbg: rgba(255, 255, 255, 0.699);
+    --feketehtrclr: rgb(0, 0, 0);
+    --feketehtrbghover: rgba(113, 66, 1, 0.7);
+    --feherhtrbg: rgb(106 66 2);
+    --feherhtrclr: white;
+    --feherhtrbghover: rgba(122, 61, 0, 0.7);
 
-    --shadow:rgba(0, 0, 0, 0.274);
-    --feketehtrbg: #ffffff;
-    --feketehtrclr: black;
-    --feketehtrbghover: #2f1f41;
-    --feherhtrbg: #231936;
-    --feherhtrclr: #ffffff;
-    --feherhtrbghover: #2c1f41;
+    --inputcolor: rgba(139, 88, 0, 0.614);
+    --hoverbg: rgba(127, 78, 0, 0.5);
+    --bordercolor: rgba(139, 88, 0, 0.614);
+    --htrszin: rgba(136, 73, 0, 0.175);
 
-    --inputcolor: rgba(31, 52, 65, 0.5);
-    --hoverbg: #291f41;
-    --bordercolor: #3d2f58;
-    --htrszin:#140d1ed2;
+    --designtitle: #734d00; /* A betűszín nem változik, a háttere átlátszó */
+    --designsection: rgba(125, 77, 0, 0.7);
+    --navbartoggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-    --designtitle:#281c3b;
-    --designsection: #1b1630;
-    --navbartoggler:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-    --navgomb: #211936;
-    --navgombhover: #281f41;
+    --navgomb: rgba(132, 75, 0, 0.7);
+    --navgombhover: rgba(132, 84, 0, 0.7);
+    --bgimg: url(../pics/narancshtr.svg);
 }
+
 
 
 
@@ -253,13 +282,14 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--oldalhatter) !important;
-    background-image: url(../pics/htr2_blr.png);
+    background-image: var(--bgimg);
     background-attachment: fixed ;
 
     font-family: syne-regular !important;
     color: var(--betuszin) !important ;
 
 }
+
 #dashboard{
     color:  var(--betuszin) !important;
 }
@@ -273,9 +303,9 @@ main{
     left: 0;
     height: 100vh;
     z-index: -10;
-    background-color: var(--htrszin);
+
     width: 100% !important;
-    backdrop-filter:blur(20px);
+
 }
 nav{
     margin: 15px !important;
@@ -301,6 +331,15 @@ nav .navbar-brand img{
 .navbar-toggler-icon {
     background-image: var(--navbartoggler) !important;
 }
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 @media only screen and (min-width: 992px) {
     nav input[type="text"]{
         width: 24vw !important;
@@ -309,8 +348,36 @@ nav .navbar-brand img{
     margin:0px 10px 0px !important;
    }
 }
+.mobilosmegjelenes{
+    display:none !important;
+}
 @media only screen and (max-width: 992px) {
+    nav .nav-item {
+        background-color:transparent !important;
+    }
+    .navbar-collapse{
+    padding-top: 10px;
+    }
 
+
+    .mobilosmegjelenes{
+        display:inline-block !important;
+        margin-left:10px !important;
+        font-weight: normal !important;
+    }
+    nav input{
+        width:100% !important;
+    }
+    nav .nav-item{
+        text-align:center !important;
+        margin:0 auto !important;
+        margin-top: 10px  !important;
+        margin-bottom: 10px  !important;
+    }
+
+    nav .dropdown {
+        background-color: transparent !important;
+    }
     .navbar-nav{
         margin: 0 auto !important;
     }
@@ -356,6 +423,10 @@ nav .navbar-brand img{
     background: var(--feketehtrbg) !important;
     color: var(--feketehtrclr) !important;
     transition: 0.4s all !important;
+    -webkit-transition: 0.4s all !important;
+    -moz-transition: 0.4s all !important;
+    -ms-transition: 0.4s all !important;
+    -o-transition: 0.4s all !important;
 }
 .piroshtr{
     background: rgb(223, 46, 46) !important;
@@ -401,14 +472,41 @@ nav .navbar-brand img{
     float:right !important;
 
 }
+#bejegyzesletrehozas textarea:hover, nav input:hover, #bejegyzesletrehozas input:hover, .hozzaszolasform textarea:hover{
+    backdrop-filter: brightness(110%) !important;
+    transition: 0.3s all !important;
+}
 
-#bejegyzesletrehozas textarea, nav input, #bejegyzesletrehozas input{
+#bejegyzesletrehozas textarea, nav input, #bejegyzesletrehozas input, .hozzaszolasform textarea{
     background-color: var(--widgethatter) !important;
     padding: 10px !important;
     padding-left: 15px !important;
     border: 1px solid var(--inputcolor);
     border-radius: 20px !important ;
     color: var(--betuszin) !important;
+    transition: 0.3s all !important;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+
+  outline:  none !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
 }
 .bejegyzesletrehozasgombok{
     margin-bottom: 0px !important;
@@ -419,12 +517,22 @@ nav .navbar-brand img{
     background-color: transparent !important;
 
 }
+#bejegyzes a{
+    text-decoration: none !important;
+    color:var(--betuszin) !important;
+}
+.commentgombok .drpdwn{
+    font-weight: 800 !important;
+    margin-top: -50px !important;
+    margin-right: 15px !important;
+    float: right !important;
+}
 .bejegyzesgombok{
     display: flex !important;
     float: right !important;
 }
 .bejegyzesgombok .drpdwn{
-    font-weight: 600 !important;
+    font-weight: 800 !important;
 }
 #bejegyzes .bejegyzesnev{
     display: inline-block !important;
@@ -479,7 +587,13 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 }
 #jobboldalisav ul li, #baloldalisav ul li{
     box-shadow: 0px 0px 25px var(--shadow);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
+
 .dropdown a{
     color: var(--betuszin) !important;
 }
@@ -490,12 +604,14 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 .dropdown-item {
     color: var(--betuszin) !important;
     border-radius: 0px !important;
+    transition: 0.3s all !important;
 }
 .dropdown-item img{
     margin-right: 10px !important;
 }
 .dropdown-item:hover{
     background-color: var(--hoverbg);
+    transition: 0.3s all !important;
 }
 
 
@@ -535,6 +651,11 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 
 
 }
+
+.dp-item{
+padding: 10px !important;
+
+}
 .drpdwn img{
     border-radius: 100% !important;
 }
@@ -561,8 +682,9 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 #bejegyzesletrehozas #images, #bejegyzesletrehozas #videos{
     display: none !important    ;
 }
-#bejegyzesletrehozas #postContent::placeholder, #bejegyzesletrehozas #postTitle::placeholder{
-    color: gray !important;
+#bejegyzesletrehozas #postContent::placeholder, #bejegyzesletrehozas #postTitle::placeholder, .hozzaszolasform textarea::placeholder, input[name="query"]::placeholder{
+    color: var(--betuszin) !important;
+    opacity:60%;
 
 
 }
@@ -570,7 +692,8 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     font-family: syne-regular !important;
     font-weight: normal !important;
 
-    color: gray !important;
+    color: var(--betuszin) !important;
+    opacity: 60%;
 }
 
 .bejegyzescim{
@@ -582,9 +705,10 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 }
 .bejegyzestartalom{
     text-align: left;
-    padding-top: 20px !important;
+    padding-top: 10px !important;
     padding-left: 10px !important;
     margin-bottom: 30px !important;
+    opacity: 90%;
 }
 .bejegyzeskep{
     border-radius: 10px !important;
@@ -673,6 +797,10 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     border-top-right-radius: 22px !important;
     border-bottom-left-radius: 22px !important;
     border-bottom-right-radius: 22px !important;
+    z-index:100 !important;
+}
+.modal-backdrop.show {
+    z-index:-1 !important;
 }
 .modal-footer{
     border-bottom-left-radius: 20px !important;
@@ -691,7 +819,8 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     transition: 0.3s !important;
 }
 .profilszerkesztes form label{
-    color: gray !important;
+    color: var(--betuszin) !important;
+    opacity: 60%;
     font-weight: 600 !important;
 
 
@@ -700,7 +829,7 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     border: 3px solid white;
     border-radius: 100%;
     max-width: 150px !important;
-    height: auto !important;
+    max-height: 150px !important;
     text-align: center !important;
     margin: 0 auto !important;
     margin-top: -60px !important;
@@ -739,8 +868,13 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     #profilok #profilgomb{
         margin-top: -0px !important   ;
     }
+    .baratkerelemgombok{
+        margin-top: 30px;
+    }
 }
-
+ .baratkerelemgombok{
+    margin-top: 30px;
+}
 .profilszerkesztes form input, .profilszerkesztes form textarea, .profilszerkesztes form select{
     background-color: var(--widgethatter);
     padding-left: 10px !important;
@@ -768,7 +902,8 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
     max-height: 40vh ;
 }
 #profil #profilkep{
-    max-width: 150px !important;
+    width: 150px !important;
+    height: 150px !important;
     margin:0 auto !important;
     border: var(--profilkepborder) 6px solid;
     border-radius: 100% !important;
@@ -782,7 +917,10 @@ nav, #bejegyzes, #bejegyzesletrehozas, .profilszerkesztes, .card {
 #profilrow{
     margin-bottom: 10px !important;
 }
-
+#profilrow h5{
+    width: fit-content !important;
+    margin: 0 auto !important;
+}
 .tartalomrow .card{
     padding: 25px !important;
 }
@@ -832,7 +970,8 @@ position: fixed !important;
     padding-top: 10px !important;
 }
 #profilrow h5{
-    color: rgb(194, 194, 194);
+    color: var(--betuszin);
+    opacity: 70% !important;
 }
 #profilrow h5::before{
     content: '@';
@@ -851,6 +990,45 @@ footer{
     background-color: var(--widgethatter) !important;
     padding: 18px !important ;
 }
+.footerszekcio{
+    background-color: var(--designsection);
+    border-radius: 20px !important;
+    margin-bottom: 10px !important;
+    padding: 5px ;
+}
+.footerszekcio a{
+    color: var(--betuszin) !important;
+    text-decoration: none !important;
+    padding: 8px !important;
+    display:block !important;
+    background-color: var(--feherhtrbg);
+    border-radius: 20px !important;
+    text-align: center;
+    margin: 10px !important;
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+.footerszekcio a:hover{
+    background-color: var(--feherhtrbghover);
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+.footerszekcio p{
+    color: var(--betuszin) !important;
+    text-decoration: none !important;
+    padding: 15px !important;
+    display:block !important;
+    background-color: var(--feherhtrbg);
+    border-radius: 20px !important;
+    text-align: center;
+    margin: 10px !important;
+}
 footer #copyright{
     text-align: right !important;
     float: right !important;
@@ -862,6 +1040,26 @@ footer .container{
 }
 footer #logo{
     zoom: 20% !important;
+}
+@media only screen and (max-width: 990px) {
+    footer #copyright{
+        float: none !important;
+        text-align: center !important;
+
+    }
+    footer{
+        background-position-x: 87% !important;
+
+    }
+
+    footer .col-lg{
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    #temavalaszto{
+        text-align: center !important;
+    }
 }
 footer hr{
     width: 80% !important;
@@ -891,7 +1089,7 @@ footer .list-inline{
     padding:10px !important;
 
 }
-#profilok .card a{
+#profilok #profilnev{
     max-width: fit-content !important;
     text-decoration: none !important;
     color: var(--betuszin) !important;
@@ -914,8 +1112,8 @@ footer .list-inline{
     margin-top: 30px !important;
 }
 .szurke{
-    color: rgb(207, 207, 207);
-
+    color: var(--betuszin);
+    opacity: 70% !important;
     font-weight: normal !important;
 }
 #profilok .card .col form{
@@ -960,7 +1158,11 @@ footer .list-inline{
     top: 13.50vh !important;
     padding-top: 0px !important;
 }
-
+@media only screen and (max-width: 767px) {
+    #baloldalisav, #jobboldalisav{
+        padding: 0.50rem !important;
+    }
+}
 #baloldalisav ul li, #jobboldalisav ul li{
     list-style-type: none !important;
 
@@ -1022,8 +1224,8 @@ footer .list-inline{
     background-color: #3b1c1c !important;
 }
 
-#sargaTema {
-    background-color: #3b3a1c !important;
+#narancsTema {
+    background-color: rgb(113, 74, 2) !important;
 }
 
 #lilaTema {
@@ -1037,7 +1239,10 @@ footer .list-inline{
 #atlatszoTema {
     background-color: #1c303b7e !important;
 }
-
+#rozsaTema{
+    background-color: rgb(252, 204, 229) !important;
+    color: black !important;
+}
 .mentve{
     width: 100%;
     text-align: center;
@@ -1047,3 +1252,66 @@ footer .list-inline{
 
 
 }
+/* Hozzászólások gomb */
+.comments-section.inactive{
+    display:none !important;
+}
+.comments-section.active{
+    display: block !important;
+}
+.comment-input{
+width:100% !important;
+}
+.comment-list{
+    list-style-type: none !important;
+    padding-left: 0px !important;
+
+}
+.comment-list p{
+margin-bottom: 0px !important;
+}
+.comment-content{
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    background: var(--widgethatter) !important;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+.none-comment{
+    padding: 15px !important;
+    background: var(--feherhtrbg) !important;
+    border-radius: 20px !important;
+}
+.comment-gomb{
+    background: transparent !important;
+    border: none !important;
+    margin-top: -50px !important;
+    margin-right: 10px !important;
+}
+
+#notificationContainer {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.text{
+    color:var(--betuszin) !important;
+}
+@media only screen and (max-width: 992px) {
+.dropdown-menu h3{
+    padding: 20px;
+}
+}
+
+

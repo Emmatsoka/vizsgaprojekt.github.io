@@ -1,6 +1,6 @@
 <title>Wesoc | Bejelentkezés</title>
 <x-guest-layout>
-  
+
         <div class="htr">
     <!-- Session Status -->
     <x-auth-session-status  :status="session('status')" />
@@ -35,18 +35,22 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-end mt-4 text-center">
             @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                <a href="{{ route('password.request') }}">
                     {{ __('Elfelejtetted a jelszavad?') }}
                 </a>
             @endif
+            vagy
+            <a href="{{ url('register') }}">
+                {{ __('Még nincs fiókod?') }}
+            </a>
                 <br>
             <button >
                 {{ __('Bejelentkezés') }}
             </button>
         </div>
-       
+
     </form>
     </div>
 </x-guest-layout>

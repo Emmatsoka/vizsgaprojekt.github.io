@@ -14,30 +14,30 @@ use Illuminate\Support\Facades\Session;
 
 class ProfileController extends Controller
 {
-   
+
     public function tema(Request $request)
     {
         $theme = $request->input('tema');
-        
-        // Frissítsd a felhasználóhoz tartozó téma értékét az adatbázisban
+
+
         $user = User::findOrFail(auth()->id());
         $user->tema = $theme;
         $user->save();
-        
-        return redirect()->back(); // Visszatérünk az előző oldalra
+
+        return redirect()->back();
     }
 
 
 public function search(Request $request)
 {
     $query = $request->input('query');
-    
-    // Keresés a felhasználók között név vagy felhasználónév alapján
+
+
     $users = User::where('name', 'like', "%$query%")
                  ->orWhere('username', 'like', "%$query%")
                  ->paginate(10);
-    
-    // Bejelentkezett felhasználó adatainak betöltése
+
+
     $authUser = Auth::user();
 
     return view('profilok', compact('users', 'query', 'authUser'));
@@ -61,11 +61,11 @@ public function search(Request $request)
         $user = User::where('username', $username)->firstOrFail();
         return view('profil', ['user' => $user]);
     }
- 
+
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
         $user = $request->user();
-    
+
         $user->username = $request->username;
         $user->name = $request->name;
         $user->email = $request->email;
@@ -73,17 +73,17 @@ public function search(Request $request)
         $user->neme = $request->neme;
         $user->lakhely = $request->lakhely;
         $user->szulev = $request->szulev;
-    
 
-    
+
+
         $user->save();
-    
+
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
     public function profilkep(ProfilePictureUpdateRequest $request): RedirectResponse
     {
         $user = $request->user();
-    
+
         if ($request->hasFile('profilkep')) {
             $avatarName = $request->file('profilkep')->hashName();
             $request->file('profilkep')->move(public_path('user'), $avatarName);
@@ -94,13 +94,13 @@ public function search(Request $request)
             $request->file('boritokep')->move(public_path('user'), $coverName);
             $user->boritokep = $coverName;
         }
-    
+
         $user->save();
-    
+
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
-  
- 
+
+
     public function destroy(Request $request): RedirectResponse
     {
         $request->validateWithBag('userDeletion', [
@@ -118,26 +118,26 @@ public function search(Request $request)
 
         return Redirect::to('/');
     }
-    
+
 
 
         public function showAllUsers()
     {
-        $users = User::all(); // Lekéred az összes felhasználót
+        $users = User::all();
 
         return view('profilok')->with('users', $users);
     }
 
     public function profile()
     {
-        $users = User::all(); // Lekéred az összes felhasználót
+        $users = User::all();
 
         return view('profilok');
     }
 
    }
-    
-    
+
+
 
 
 

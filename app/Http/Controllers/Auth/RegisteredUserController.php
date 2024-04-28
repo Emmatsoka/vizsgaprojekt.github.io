@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use romanzipp\Turnstile\Rules\TurnstileCaptcha;
 
 class RegisteredUserController extends Controller
 {
@@ -37,6 +38,7 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'gdpr' =>'accepted',
+            'cf-turnstile-response' => ['required', 'string', new TurnstileCaptcha()],
         ],[
             'username.unique' => 'A felhasználónév már foglalt.',
             'username.string' => 'A felhasználónévnek szövegnek kell lennie.',
@@ -55,7 +57,7 @@ class RegisteredUserController extends Controller
             'password.min:8' => 'A jelszónak minimum 8 karakterből kell állnia.',
             'password.confirmed' => 'A jelszó megerősítése nem egyezik.',
             'password.password' => 'A jelszónak legalább 8 karakter hosszúnak kell lennie, és tartalmaznia kell legalább egy nagybetűt, egy kisbetűt, egy számot és egy speciális karaktert.',
-        
+
         ]);
 
         $user = User::create([

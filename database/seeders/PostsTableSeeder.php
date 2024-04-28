@@ -17,14 +17,14 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        $userids = [1,2];
+        $userids = [1,2,3,4,5,6,7,8,9];
         $faker = Faker::create('hu_HU');
 
         foreach (range(1, 50) as $index) {
-            // Generálj egyedi fájlnevet a képnek
 
 
-            // Felhasználó létrehozása a generált képekkel
+
+
             Postmodel::create([
 
                 'user_id' => $userids[array_rand($userids)],

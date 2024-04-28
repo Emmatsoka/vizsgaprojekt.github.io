@@ -4,12 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        {{ romanzipp\Turnstile\Captcha::getScript() }}
         <link rel="shortcut icon" href="{{ asset('Wesoc_favicon_white.png') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ asset('styles/bootstrap/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('styles/app-main.css') }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        @if($user->tema == "alap-tema")
+        <meta name="theme-color" content="rgb(13, 24, 30)">
+        @elseif($user->tema == "feher-tema")
+        <meta name="theme-color" content="#f2f2f2">
+        @elseif($user->tema == "lila-tema")
+        <meta name="theme-color" content="rgb(13, 14, 30)">
+        @elseif($user->tema == "rozsa-tema")
+        <meta name="theme-color" content="rgb(252, 204, 229)">
+        @elseif($user->tema == "narancs-tema")
+        <meta name="theme-color" content="rgb(97, 56, 3)">
+        @elseif($user->tema == "piros-tema")
+        <meta name="theme-color" content="#1e0d0ddc">
+        @elseif($user->tema == "kek-tema")
+        <meta name="theme-color" content="rgb(13, 18, 30)">
+        @elseif($user->tema == "zold-tema")
+        <meta name="theme-color" content="#0d1e0e">
+        @endif
+
+        <script src="{{ asset('js/post.js')}}"></script>
     </head>
     <body class="{{ $user->tema }}">
         <div id="htrszin"></div>
