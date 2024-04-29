@@ -727,12 +727,18 @@ display: block !important;
 
 
 /* ------------------------------------------------------ */
-
+.aprojekt p{
+   margin: 0 auto;
+}
 .aprojekt h2{
     font-weight: 660 !important;
+    padding-bottom: 10px !important;
+
+
 }
 .aprojekt h1{
 text-align: center !important;
+
 }
 .aprojekt .col-lg-3{
      margin: 50px !important;
@@ -760,4 +766,16 @@ margin-bottom: 20px !important;
      }
 #udvozlettel{
 text-align: right !important;
+}
+
+.table>:not(caption)>*>* {
+    background-color: transparent !important;
+}
+.szurke{
+    opacity: 60% !important;
+    font-weight: normal !important;
+}
+.projektkep{
+    margin-inline-end: 8px !important;
+
 }

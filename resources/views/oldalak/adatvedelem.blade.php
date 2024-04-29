@@ -10,13 +10,13 @@
     <meta name="title" content="Wesoc | Adatvédelem" />
     <meta name="description" content="Üdvözöllek a Wesoc-on! Fontos számunkra, hogy tisztában légy azzal, hogyan kezeljük és védjük az általad megadott személyes adatokat. Kérlek, figyelmesen olvasd el az alábbi tájékoztatót, hogy teljes mértékben megértsd ezt." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://wesoc.fejlessz.hu/" />
+    <meta property="og:url" content="https://wesoc.site/adatvedelem" />
     <meta property="og:title" content="Wesoc | Adatvédelem" />
     <meta property="og:description" content="Üdvözöllek a Wesoc-on! Fontos számunkra, hogy tisztában légy azzal, hogyan kezeljük és védjük az általad megadott személyes adatokat. Kérlek, figyelmesen olvasd el az alábbi tájékoztatót, hogy teljes mértékben megértsd ezt." />
     <meta property="og:image" content="https://www.kepfeltoltes.eu/images/2024/04/27/387Wesoc_Adatv_delem.png" />
     <meta name="theme-color" content="#111d24">
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://wesoc.fejlessz.hu/" />
+    <meta property="twitter:url" content="https://wesoc.site/adatvedelem" />
     <meta property="twitter:title" content="Wesoc | Adatvédelem" />
     <meta property="twitter:description" content="Üdvözöllek a Wesoc-on! Fontos számunkra, hogy tisztában légy azzal, hogyan kezeljük és védjük az általad megadott személyes adatokat. Kérlek, figyelmesen olvasd el az alábbi tájékoztatót, hogy teljes mértékben megértsd ezt." />
     <meta property="twitter:image" content="https://www.kepfeltoltes.eu/images/2024/04/27/387Wesoc_Adatv_delem.png" />

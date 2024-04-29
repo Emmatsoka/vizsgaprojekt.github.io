@@ -1,5 +1,6 @@
 <x-app-layout>
 
+        <!------------------------- Profil szekció ------------------------->
     <div class="container mt-4" id="profil">
         <div class="row justify-content-center" id="profilrow">
             <div class="col-md">
@@ -33,6 +34,8 @@
                 </div>
             </div>
         </div>
+
+            <!--------------------- Bemutatkozás szekció ---------------------->
         <div class="row justify-content-center tartalomrow">
 
             <div class="col-md-3">
@@ -72,6 +75,7 @@
             <div class="col-md">
          @if (Auth::user()->username == $user->username)
 
+            <!------------------------ Bejegyzés létrehozása ------------------------->
          @include('bejegyzes-letrehozas')
 
           @endif
@@ -105,6 +109,7 @@
             @endif
             </div>
 
+            <!------------------------- Bejegyzések ------------------------------>
             <div class="row">
                 <div class="col-md">
                     <div >
@@ -132,9 +137,8 @@
                 @endif
             @endif
                 </div>
-
+            <!----------------------------- Like gomb -------------------------------->
             <div class=" justify-content-between  mb-3">
-
                 <form id="likeForm" data-post-id="{{ $post->id }}" class="like-gomb">
                     @csrf
                     <input type="hidden" name="postId" value="{{ $post->id }}">
@@ -144,13 +148,12 @@
                     </button>
                 </form>
 
-                <!-- Hozzászólások gomb és szekció -->
+            <!-------------------------- Hozzászólások gomb -------------------------->
                 <button class="gomb feherhtr comment-toggle-btn" onclick="hozzaszolasok(this)" >💬 {{ $post->comments()->count() }}</button>
             </div>
-            <!-- Hozzászólások szekciója -->
+
+            <!----------------------- Hozzászólások szekciója ------------------------>
             <div class="comments-section inactive" >
-
-
                 <ul class="comment-list">
                     @if(!($post->comments->isEmpty()))
                     @foreach ($post->comments as $comment)
@@ -188,7 +191,8 @@
                     @endif
                 </ul>
             </div>
-         <!-- Új hozzászólás űrlap -->
+
+            <!--------------------------- Új hozzászólás  ------------------------------->
          <form action="{{ route('comment.store') }}" method="POST" class="hozzaszolasform">
             @csrf
             <input type="hidden" name="post_id" value="{{ $post->id }}">
@@ -200,6 +204,7 @@
         </div>
     </div>
           @endforeach
+            <!----------------------- Ha nincsenek posztjai(d)  --------------------------->
         @elseif(Auth::user()->username == $user->username && $user->posts->isEmpty() )
         <p>Nincsenek posztjaid.</p>
         @elseif(Auth::user()->username !== $user->username  && $user->posts->isEmpty() )

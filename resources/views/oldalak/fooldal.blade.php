@@ -10,13 +10,13 @@
     <meta name="title" content="Wesoc | Főoldal" />
     <meta name="description" content="Biztonságos közeg, jól működő, letisztult szociális oldal. Csatlakozz hozzánk még ma, és légy közösségünk tagja!" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://wesoc.fejlessz.hu/" />
+    <meta property="og:url" content="https://wesoc.site/fooldal" />
     <meta property="og:title" content="Wesoc | Főoldal" />
     <meta property="og:description" content="Biztonságos közeg, jól működő, letisztult szociális oldal. Csatlakozz hozzánk még ma, és légy közösségünk tagja!" />
     <meta property="og:image" content="https://www.kepfeltoltes.eu/images/2024/04/10/181Screenshot_2024_04_10_.png" />
     <meta name="theme-color" content="#111d24">
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://wesoc.fejlessz.hu/" />
+    <meta property="twitter:url" content="https://wesoc.site/fooldal" />
     <meta property="twitter:title" content="Wesoc | Főoldal" />
     <meta property="twitter:description" content="Biztonságos közeg, jól működő, letisztult szociális oldal. Csatlakozz hozzánk még ma, és légy közösségünk tagja!" />
     <meta property="twitter:image" content="https://www.kepfeltoltes.eu/images/2024/04/10/181Screenshot_2024_04_10_.png" />

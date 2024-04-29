@@ -70,12 +70,12 @@
                     </button>
                 </form>
 
-                <!-- Hozzászólások gomb és szekció -->
+            <!----- Hozzászólások gomb ---->
                 <button class="gomb feherhtr comment-toggle-btn" onclick="hozzaszolasok(this)" >💬 {{ $post->comments()->count() }}</button>
             </div>
+
             <!-- Hozzászólások szekciója -->
             <div class="comments-section inactive" >
-
                 <ul class="comment-list">
                     @if(!($post->comments->isEmpty()))
                     @foreach ($post->comments as $comment)
@@ -113,7 +113,8 @@
                     @endif
                 </ul>
             </div>
-            <!-- Új hozzászólás űrlap -->
+
+                <!---- Új hozzászólás ----->
             <form action="{{ route('comment.store') }}" method="POST" class="hozzaszolasform">
                 @csrf
                 <input type="hidden" name="post_id" value="{{ $post->id }}">

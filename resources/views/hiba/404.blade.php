@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="{{ asset('styles/webs.css') }}">
     <link rel="stylesheet" href="{{ asset('/styles/bootstrap/css/bootstrap.min.css') }}" >
     <style>
-  
+
 
     </style>
 </head>
 <body class="err">
-  
-    <h1 id="404h1">404 | Az oldal nem található</h1>
+
+    <h1 id="404h1">{{ $errorCode }} | {{ $errorMessage }}</h1>
     <div id="404gomb">
     <a class="gomb feherhtr bold" href="{{ url('fooldal')}}">Vissza a főoldalra</a>
- 
- 
+
+
 </div>
 <script src="./styles/bootstrap/js/bootstrap.js"></script>
 <script src="./styles/bootstrap/js/bootstrap.min.js"></script>

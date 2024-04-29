@@ -18,11 +18,31 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
-    public function render($request, Throwable $e){
-        if($this->isHttpException($e) == 404) {
-            return response()->view('hiba.404',[],404);    
+   public function render($request, Throwable $e)
+{
+    if ($this->isHttpException($e)) {
+        $statusCode = $e->getStatusCode();
+        $errorMessage = '';
+
+        switch ($statusCode) {
+            case 404:
+                $errorMessage = 'Az oldal nem található';
+                break;
+            case 403:
+                $errorMessage = 'Nincs elég jogosultságod';
+                break;
+            default:
+                $errorMessage = 'Hiba történt';
+                break;
+        }
+
+        return response()->view('hiba.404', [
+            'errorCode' => $statusCode,
+            'errorMessage' => $errorMessage,
+        ], $statusCode);
     }
-return parent::render($request, $e);
+
+    return parent::render($request, $e);
 }
     /**
      * Register the exception handling callbacks for the application.

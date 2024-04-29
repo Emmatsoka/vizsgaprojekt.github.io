@@ -26,7 +26,7 @@ class PostController extends Controller
     public function store(Request $request)
 {
     $request->validate([
-        'filetoupload' => 'file|max:11000',
+        'filetoupload' => 'file|max:11000|mimes:jpeg,png,gif,mp4,mov,avi,mp3,wav,ogg',
     ]);
 
         $data = new Postmodel();
@@ -64,13 +64,24 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
+        $post = Postmodel::find($id);
+        if (!$post) {
+            abort(404);
+        }
+
+        if ($post->user_id !== auth()->id() && auth()->user()->admin !== 1) {
+            abort(403);
+        }
+
+
+
         $request->validate([
-            'filetoupload' => 'file|max:11000',
+            'filetoupload' => 'file|max:11000|mimes:jpeg,png,gif,mp4,mov,avi,mp3,wav,ogg',
         ]);
 
 
 
-  $post = Postmodel::find($id);
+
     $post->title = $request->titletoupload;
     $post->context = $request->contexttoupload;
     $post->user_id = auth()->id();
